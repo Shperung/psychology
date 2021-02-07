@@ -48,7 +48,7 @@ export default function IndexContent(props) {
           </a>
         </div>
         <figure className={styles.main_figure}>
-          <img src="https://preview.colorlib.com/theme/quantum/images/hero_bg_1.jpg" alt="" />
+          <img src="/main.jpg" alt="" />
           <div className={styles.main_personal}>
             <h2>
               <Trans lang={lang}>Редько Тетяна Георгіївна</Trans>

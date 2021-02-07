@@ -1,4 +1,10 @@
 $min-container: 1250px;
+$tablat: 1030px;
+$tablet-middle: 991px;
+$tablet-min: 768px;
+$phone-big: 620px;
+$phone: 480px;
+$phone-min: 420px;
 
 .btn {
   color: var(--color-white);
@@ -90,6 +96,10 @@ $min-container: 1250px;
   align-items: flex-start;
   flex-direction: column;
   padding-left: calc((100% - var(--width-container)) / 2 + 16px);
+
+  @media (max-width: $min-container) {
+    padding-left: 16px;
+  }
 }
 
 .title {
@@ -135,6 +145,11 @@ $min-container: 1250px;
 .section {
   padding-top: 48px;
   padding-bottom: 48px;
+
+  @media (max-width: $tablet-min) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .info_section {
@@ -146,6 +161,11 @@ $min-container: 1250px;
   margin: 0;
   margin-bottom: 32px;
   position: relative;
+
+  @media (max-width: $tablet-min) {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
 
   &::after {
     content: '';
@@ -163,6 +183,10 @@ $min-container: 1250px;
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 8px;
+
+    @media (max-width: $tablet-min) {
+      font-size: 18px;
+    }
 
     &:first-child {
       text-indent: 24px;
@@ -185,6 +209,10 @@ $min-container: 1250px;
   z-index: 2;
   flex-shrink: 0;
 
+  @media (max-width: $tablat) {
+    width: 400px;
+  }
+
   img {
     width: 100%;
   }
@@ -199,6 +227,11 @@ $min-container: 1250px;
   left: -32px;
   padding-left: 90px;
 
+  @media (max-width: $tablat) {
+    top: 32px;
+    padding-left: 72px;
+  }
+
   li {
     font-size: 26px;
     margin-bottom: 16px;
@@ -206,6 +239,11 @@ $min-container: 1250px;
     position: relative;
     align-items: center;
     font-weight: bold;
+
+    @media (max-width: $tablat) {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
 
     &::before {
       content: '';

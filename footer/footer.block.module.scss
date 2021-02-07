@@ -1,4 +1,10 @@
 $min-container: 1250px;
+$tablat: 1030px;
+$tablet-middle: 991px;
+$tablet-min: 768px;
+$phone-big: 620px;
+$phone: 480px;
+$phone-min: 420px;
 
 .footer {
   background-color: var(--color-dark);
@@ -9,6 +15,10 @@ $min-container: 1250px;
 
 .footer_container {
   display: flex;
+
+  @media (max-width: $tablet-middle) {
+    flex-wrap: wrap;
+  }
 }
 
 .logo_footer_wrap {
@@ -50,6 +60,10 @@ $min-container: 1250px;
 .footer_item {
   flex: 1;
   padding: 0 24px;
+
+  @media (max-width: $tablet-middle) {
+    flex: auto;
+  }
 
   h3 {
     margin: 0;
