@@ -1,0 +1,16 @@
+node_modules/
+android/
+build/needForBuild
+dist/
+ios/
+locales/
+.next/
+api/
+react-native.config.js
+**/metro.config.js
+**/babel.config.js
+**/generator.middleware.js
+package.json
+**/*.yml
+**/*.yaml
+**/*.production.*
