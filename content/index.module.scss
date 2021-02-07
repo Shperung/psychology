@@ -1,3 +1,50 @@
+.container {
+  width: 1140px;
+  padding: 0 16px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(253 255 245 / 50%);
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 16px 0;
+  margin-right: 16px;
+  //color: var(--color-primary-dark);
+  text-shadow: 1px 1px 1px rgb(88 88 88 / 20%);
+}
+
+.langs {
+  margin-left: auto;
+}
+.lang_link {
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 12px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 4px solid transparent;
+}
+
+.lang_link_active {
+  color: var(--color-primary-dark);
+  border-bottom-color: var(--color-primary-dark);
+}
+
 .title {
   margin: 0;
   line-height: 1.15;
