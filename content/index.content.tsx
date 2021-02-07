@@ -41,7 +41,7 @@ export default function IndexContent(props) {
             <Trans lang={lang}>Консультація психолога</Trans>
           </h1>
           <p className={styles.descr}>
-            <Trans lang={lang}>психіатр, медичний психолог, гіпнотерапевт</Trans>
+            <Trans lang={lang}>Ми дбаємо про ваше здоров'я</Trans>
           </p>
           <a className={`${styles.btn} ${styles.header_btn}`}>
             <Trans lang={lang}>Зв'язатися</Trans>
@@ -49,11 +49,22 @@ export default function IndexContent(props) {
         </div>
         <figure className={styles.main_figure}>
           <img src="https://preview.colorlib.com/theme/quantum/images/hero_bg_1.jpg" alt="" />
+          <div className={styles.main_personal}>
+            <h2>
+              <Trans lang={lang}>Редько Тетяна Георгіївна</Trans>
+            </h2>
+            <p className={styles.person}>
+              <Trans lang={lang}>Кандидат медичних наук</Trans>
+            </p>
+            <p className={styles.person}>
+              <Trans lang={lang}>Психіатр, медичний психолог, гіпнотерапевт</Trans>
+            </p>
+          </div>
         </figure>
       </section>
 
       {/*  footer */}
-      <FooterBlock />
+      <FooterBlock lang={lang} />
     </main>
   );
 }

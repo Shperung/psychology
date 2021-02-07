@@ -25,6 +25,7 @@ $min-container: 1250px;
   width: 100%;
   backdrop-filter: blur(5px);
   background-color: rgba(253, 255, 245, 0.7);
+  z-index: 10;
 }
 
 .header_container {
@@ -71,6 +72,7 @@ $min-container: 1250px;
   display: flex;
   width: 50%;
   height: 100%;
+  position: relative;
 
   img {
     width: 100%;
@@ -98,9 +100,32 @@ $min-container: 1250px;
 
 .descr {
   margin: 0;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .header_btn {
   margin-top: 32px;
+}
+
+.main_personal {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 42px;
+  clip-path: polygon(90% 0, 100% 20%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
+  width: 370px;
+
+  h2 {
+    margin: 0;
+    font-size: 20px;
+    padding-bottom: 16px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
 }
