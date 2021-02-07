@@ -20,6 +20,14 @@ export default function FooterBlock(props) {
             </a>
           </Link>
         </div>
+        <div className={styles.footer_item}>
+          <h3>Email:</h3>
+          <ul>
+            <li className={styles.hover_li}>
+              <a href="mailto:uamentalhealth@gmail.com">uamentalhealth@gmail.com</a>
+            </li>
+          </ul>
+        </div>
         <address className={styles.footer_item}>
           <h3>
             <Trans lang={lang}>Адреса</Trans>:
@@ -31,23 +39,6 @@ export default function FooterBlock(props) {
             <Trans lang={lang}>Вінниця</Trans>, 21036
           </p>
         </address>
-
-        <div className={styles.footer_item}>
-          <h3>
-            <Trans lang={lang}>Телефон</Trans>:
-          </h3>
-          <ul>
-            <li className={styles.hover_li}>
-              <a href="tel:+380509584113">+38-050-958-41-13</a>
-            </li>
-            <li className={styles.hover_li}>
-              <a href="tel:+380939167544">+38-093-916-75-44 (viber)</a>
-            </li>
-            <li className={styles.hover_li}>
-              <a href="tel:+380681627732">+38-068-162-77-32</a>
-            </li>
-          </ul>
-        </div>
 
         <div className={styles.footer_item}>
           <h3>
@@ -65,12 +56,19 @@ export default function FooterBlock(props) {
             </li>
           </ul>
         </div>
-
         <div className={styles.footer_item}>
-          <h3>Email:</h3>
+          <h3>
+            <Trans lang={lang}>Телефон</Trans>:
+          </h3>
           <ul>
             <li className={styles.hover_li}>
-              <a href="mailto:uamentalhealth@gmail.com">uamentalhealth@gmail.com</a>
+              <a href="tel:+380509584113">+38-050-958-41-13</a>
+            </li>
+            <li className={styles.hover_li}>
+              <a href="tel:+380939167544">+38-093-916-75-44 (viber)</a>
+            </li>
+            <li className={styles.hover_li}>
+              <a href="tel:+380681627732">+38-068-162-77-32</a>
             </li>
           </ul>
         </div>
