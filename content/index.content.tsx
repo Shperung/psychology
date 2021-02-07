@@ -41,7 +41,7 @@ export default function IndexContent(props) {
             <Trans lang={lang}>Консультація психолога</Trans>
           </h1>
           <p className={styles.descr}>
-            <Trans lang={lang}>Ми дбаємо про ваше здоров'я</Trans>
+            <Trans lang={lang}>Редько Тетяна Георгіївна</Trans>
           </p>
           <a className={`${styles.btn} ${styles.header_btn}`}>
             <Trans lang={lang}>Зв'язатися</Trans>
