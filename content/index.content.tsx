@@ -64,7 +64,7 @@ export default function IndexContent(props) {
       </section>
 
       {/*  info_section */}
-      <section className={styles.info_section}>
+      <section className={`${styles.section} ${styles.info_section}`}>
         <div data-container>
           <h2 className={styles.h2}>
             <Trans lang={lang}>Ми дбаємо про ваше здоров'я</Trans>
@@ -98,6 +98,65 @@ export default function IndexContent(props) {
                 нервової системи.
               </Trans>
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/*  prof_section */}
+      <section className={`${styles.section} ${styles.prof_section}`}>
+        <div data-container>
+          <h2 className={styles.h2}>
+            <Trans lang={lang}>Займаюсь лікуванням</Trans>
+          </h2>
+          <div className={styles.prof_blocks}>
+            <figure className={styles.prof_figure}>
+              <img src="/prof.jpg" alt="Редько Тетяна Георгіївна" />
+            </figure>
+
+            <ul className={styles.prof_ul}>
+              <li>
+                <Trans lang={lang}>фобій</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>тривожних станів</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>депресій</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>афективних розладів</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>порушень режиму сну</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>післяпологових депресій</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>нервової анорексії та булімії</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>різних видів залежності</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>шизофренії</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>панічних станів</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>психотичних станів</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>розладів статевої ідентифікації</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>психосоматичних розладів</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>неврозів</Trans>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
