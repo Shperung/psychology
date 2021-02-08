@@ -92,6 +92,7 @@ $phone-min: 420px;
 
     &:before {
       content: '';
+      flex-shrink: 0;
       width: 8px;
       height: 8px;
       display: block;
