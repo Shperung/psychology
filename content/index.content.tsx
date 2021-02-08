@@ -48,7 +48,7 @@ export default function IndexContent(props) {
           </a>
         </div>
         <figure className={styles.main_figure}>
-          <img src="/main.jpg" alt="" />
+          <img src="/main2.jpg" alt="" />
           <div className={styles.main_personal}>
             <h2>
               <Trans lang={lang}>Редько Тетяна Георгіївна</Trans>
@@ -108,6 +108,16 @@ export default function IndexContent(props) {
                 медичному університеті ім. М. І. Пирогова.
               </Trans>
             </p>
+
+            <h3 className={styles.h3}>
+              <Trans lang={lang}>Приватна практика</Trans>
+            </h3>
+            <figure className={styles.license}>
+              <img src="/license.svg" alt="Ліцензія" />
+              <figcaption>
+                <Trans lang={lang}>Ліцензія МОЗ України від 03.10.18р. № 0310/13-М</Trans>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -199,6 +209,35 @@ export default function IndexContent(props) {
               <figure className={styles.hypnosis_figure}>
                 <img src="/hypnosis.jpg" alt="Редько Тетяна Георгіївна" />
               </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/*  analis_section */}
+      <section className={`${styles.section} ${styles.prof_section}`}>
+        <div data-container>
+          <h2 className={styles.h2}>
+            <Trans lang={lang}>Психоаналіз</Trans>
+          </h2>
+          <div className={styles.prof_blocks}>
+            <figure className={styles.analis_figure}>
+              <img src="/main.jpg" alt="Редько Тетяна Георгіївна" />
+            </figure>
+            <div className={styles.analis_border}>
+              <p>
+                <Trans lang={lang}>
+                  Проводжу психокорекцію особистісних порушень, займаюсь питаннями психоаналізу.
+                  Співпрацюю у команді з психологом, сексопатологом, наркологом та терапевтом.
+                </Trans>{' '}
+              </p>
+              <p>
+                <Trans lang={lang}>
+                  Проводжу консультування пацієнтів, які перебувають за кордоном. Надаю
+                  індивідуальні, сімейні та групові консультації. Проводжу медичний супровід
+                  пацієнтів з психічними розладами, які супроводжуються суїцидальною поведінкою.
+                </Trans>
+              </p>
             </div>
           </div>
         </div>
