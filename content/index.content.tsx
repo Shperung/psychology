@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Link from 'next/link';
 
 //helpers
@@ -13,6 +14,43 @@ export default function IndexContent(props) {
   const { lang } = props;
   const isRu = lang === 'ru';
   const href = isRu ? '/ru#' : '/#';
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    text: '',
+  });
+
+  const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLInputElement>) => {
+    e.preventDefault();
+
+    if (formData.name && formData.phone) {
+      fetch('/api/mail', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+        .then(res => {
+          return res.json();
+        })
+        .then(data => {
+          console.log('data', data);
+        })
+        .catch(err => {
+          console.log('err', err);
+        });
+    }
+  };
 
   return (
     <main>
@@ -240,6 +278,29 @@ export default function IndexContent(props) {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/*  form_section */}
+      <section className={`${styles.section} ${styles.info_section}`}>
+        <div data-container>
+          <h2 className={styles.h2}>
+            <Trans lang={lang}>Зв'язатися</Trans>
+          </h2>
+          <form onSubmit={handleSubmit}>
+            <label>
+              <span>
+                <Trans lang={lang}>Ім'я</Trans>
+              </span>
+              <input type="text" name="name" required onChange={handleChange} />
+              <input type="email" name="email" onChange={handleChange} />
+              <input type="tel" name="phone" required onChange={handleChange} />
+              <textarea name="text" onChange={handleChange} />
+              <button className={`${styles.btn} ${styles.form_btn}`}>
+                <Trans lang={lang}>Зв'язатися</Trans>
+              </button>
+            </label>
+          </form>
         </div>
       </section>
 

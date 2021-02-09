@@ -24,7 +24,7 @@ export default function FooterBlock(props) {
           <h3>Email:</h3>
           <ul>
             <li className={styles.hover_li}>
-              <a href="mailto:uamentalhealth@gmail.com">uamentalhealth@gmail.com</a>
+              <a href="mailto:t.g.redko@gmail.com">t.g.redko@gmail.com</a>
             </li>
           </ul>
         </div>
@@ -33,7 +33,7 @@ export default function FooterBlock(props) {
             <Trans lang={lang}>Адреса</Trans>:
           </h3>
           <p>
-            <Trans lang={lang}>вул. Хмельницьке Шосе, 23, поверх 2, каб. 115 м.</Trans>
+            <Trans lang={lang}>вул. Хмельницьке Шосе, 23, поверх 2, каб. 115.</Trans>
           </p>
           <p>
             <Trans lang={lang}>Вінниця</Trans>, 21036
@@ -46,13 +46,13 @@ export default function FooterBlock(props) {
           </h3>
           <ul>
             <li>
-              <Trans lang={lang}>Вівторок</Trans> 16.00-19.00
-            </li>
-            <li>
-              <Trans lang={lang}>Четвер</Trans> 16.00-19.00
+              <Trans lang={lang}>Кожен день</Trans> 16.00-19.00
             </li>
             <li>
               <Trans lang={lang}>Субота</Trans> 10.00-15.00
+            </li>
+            <li>
+              <Trans lang={lang}>Прийом за попереднім записом.</Trans>
             </li>
           </ul>
         </div>
