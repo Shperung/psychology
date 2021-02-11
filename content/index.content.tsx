@@ -31,7 +31,7 @@ export default function IndexContent(props) {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLInputElement>) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
 
     if (formData.name && formData.phone) {
