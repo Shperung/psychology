@@ -287,19 +287,59 @@ export default function IndexContent(props) {
           <h2 className={styles.h2}>
             <Trans lang={lang}>Зв'язатися</Trans>
           </h2>
-          <form onSubmit={handleSubmit}>
-            <label>
-              <span>
+          <form onSubmit={handleSubmit} className={styles.contact_form}>
+            <label className={styles.contact_label}>
+              <span className={styles.contact_label_text}>
                 <Trans lang={lang}>Ім'я</Trans>
+                <sup>*</sup>
               </span>
-              <input type="text" name="name" required onChange={handleChange} />
-              <input type="email" name="email" onChange={handleChange} />
-              <input type="tel" name="phone" required onChange={handleChange} />
-              <textarea name="text" onChange={handleChange} />
-              <button className={`${styles.btn} ${styles.form_btn}`}>
-                <Trans lang={lang}>Зв'язатися</Trans>
-              </button>
+              <input
+                className={styles.contact_fild}
+                type="text"
+                name="name"
+                required
+                onChange={handleChange}
+              />
             </label>
+
+            <label className={styles.contact_label}>
+              <span className={styles.contact_label_text}>
+                <Trans lang={lang}>Телефон</Trans>
+                <sup>*</sup>
+              </span>
+              <input
+                className={styles.contact_fild}
+                type="tel"
+                name="phone"
+                required
+                onChange={handleChange}
+              />
+            </label>
+
+            <label className={styles.contact_label}>
+              <span className={styles.contact_label_text}>Email</span>
+              <input
+                className={styles.contact_fild}
+                type="email"
+                name="email"
+                onChange={handleChange}
+              />
+            </label>
+
+            <label className={styles.contact_label}>
+              <span className={styles.contact_label_text}>
+                <Trans lang={lang}>Повідомлення</Trans>
+              </span>
+              <textarea
+                className={`${styles.contact_fild} ${styles.contact_textarea}`}
+                name="text"
+                onChange={handleChange}
+              />
+            </label>
+
+            <button className={`${styles.btn} ${styles.form_btn}`}>
+              <Trans lang={lang}>Зв'язатися</Trans>
+            </button>
           </form>
         </div>
       </section>
