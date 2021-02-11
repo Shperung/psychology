@@ -24,7 +24,7 @@ export default function IndexContent(props) {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState('');
 
-  const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
+  const handleChange = (e: any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
