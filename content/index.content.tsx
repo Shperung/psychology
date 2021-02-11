@@ -14,12 +14,15 @@ export default function IndexContent(props) {
   const { lang } = props;
   const isRu = lang === 'ru';
   const href = isRu ? '/ru#' : '/#';
-  const [formData, setFormData] = useState({
+  const initForm = {
     name: '',
     email: '',
     phone: '',
     text: '',
-  });
+  };
+  const [formData, setFormData] = useState(initForm);
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState('');
 
   const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
     setFormData({
@@ -32,6 +35,7 @@ export default function IndexContent(props) {
     e.preventDefault();
 
     if (formData.name && formData.phone) {
+      setLoading(true);
       fetch('/api/mail', {
         method: 'POST',
         headers: {
@@ -44,10 +48,16 @@ export default function IndexContent(props) {
           return res.json();
         })
         .then(data => {
-          console.log('data', data);
+          //console.log('data', data);
+          setStatus(data.status);
+          setFormData(initForm);
         })
         .catch(err => {
           console.log('err', err);
+          setStatus('error');
+        })
+        .finally(() => {
+          setLoading(false);
         });
     }
   };
@@ -295,6 +305,7 @@ export default function IndexContent(props) {
               </span>
               <input
                 className={styles.contact_fild}
+                value={formData.name}
                 type="text"
                 name="name"
                 required
@@ -310,9 +321,11 @@ export default function IndexContent(props) {
               <input
                 className={styles.contact_fild}
                 type="tel"
+                value={formData.phone}
                 name="phone"
                 required
                 onChange={handleChange}
+                placeholder="+380000000000"
               />
             </label>
 
@@ -320,6 +333,7 @@ export default function IndexContent(props) {
               <span className={styles.contact_label_text}>Email</span>
               <input
                 className={styles.contact_fild}
+                value={formData.email}
                 type="email"
                 name="email"
                 onChange={handleChange}
@@ -331,15 +345,33 @@ export default function IndexContent(props) {
                 <Trans lang={lang}>Повідомлення</Trans>
               </span>
               <textarea
+                value={formData.text}
                 className={`${styles.contact_fild} ${styles.contact_textarea}`}
                 name="text"
                 onChange={handleChange}
               />
             </label>
 
-            <button className={`${styles.btn} ${styles.form_btn}`}>
-              <Trans lang={lang}>Зв'язатися</Trans>
-            </button>
+            <div className={styles.btn_form_group}>
+              <button disabled={loading} className={`${styles.btn} ${styles.form_btn}`}>
+                <Trans lang={lang}>Зв'язатися</Trans>
+              </button>
+              {loading ? (
+                <div className={styles.loader}>
+                  <img src="/loading.svg" width="32px" height="32px" />
+                </div>
+              ) : null}
+
+              <div className={`${styles.status_msg} `}>
+                <Trans lang={lang}>
+                  {status === 'success'
+                    ? 'Повідомлення успішно відправлено'
+                    : status === 'error'
+                    ? 'Не вдялось відправити повідомлення, спродуйте ше раз'
+                    : ''}
+                </Trans>
+              </div>
+            </div>
           </form>
         </div>
       </section>
