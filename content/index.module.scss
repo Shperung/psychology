@@ -76,6 +76,14 @@ $phone-min: 420px;
   align-items: center;
   width: 100%;
   height: 100vh;
+
+  @media (max-width: $tablet-min) {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-bottom: 32px;
+    padding-top: 48px;
+    align-items: baseline;
+  }
 }
 
 .main_figure {
@@ -90,6 +98,14 @@ $phone-min: 420px;
     object-fit: cover;
     object-position: top center;
   }
+
+  @media (max-width: $tablet-min) {
+    width: 100%;
+
+    img {
+      height: 100vw;
+    }
+  }
 }
 
 .main_section_heading {
@@ -103,6 +119,12 @@ $phone-min: 420px;
 
   @media (max-width: $min-container) {
     padding-left: 16px;
+  }
+
+  @media (max-width: $tablet-min) {
+    width: 100%;
+    padding-right: 16px;
+    padding-top: 32px;
   }
 }
 
@@ -168,7 +190,11 @@ $phone-min: 420px;
 
   @media (max-width: $tablet-min) {
     font-size: 32px;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $phone-big) {
+    margin-bottom: 32px;
   }
 
   &::after {
@@ -200,6 +226,14 @@ $phone-min: 420px;
 
 .prof_section {
   padding-bottom: 100px;
+
+  @media (max-width: $tablet-min) {
+    padding-bottom: 74px;
+  }
+
+  @media (max-width: $phone-big) {
+    padding-bottom: 32px;
+  }
 }
 
 .prof_blocks {
@@ -214,6 +248,14 @@ $phone-min: 420px;
 
   @media (max-width: $tablat) {
     width: 400px;
+  }
+
+  @media (max-width: $tablet-min) {
+    width: 230px;
+  }
+
+  @media (max-width: $phone-big) {
+    display: none;
   }
 
   img {
@@ -236,6 +278,18 @@ $phone-min: 420px;
     padding-left: 72px;
   }
 
+  @media (max-width: $tablet-min) {
+    padding: 32px;
+    padding-left: 64px;
+  }
+
+  @media (max-width: $phone-big) {
+    padding: 0;
+    left: 0;
+    border: none;
+    top: 0;
+  }
+
   li {
     font-size: 26px;
     margin-bottom: 16px;
@@ -256,6 +310,7 @@ $phone-min: 420px;
       background-color: var(--color-primary);
       margin-right: 16px;
       margin-top: 4px;
+      flex-shrink: 0;
     }
   }
 }
@@ -265,6 +320,10 @@ $phone-min: 420px;
 .hypnosis_section {
   background-color: var(--color-light);
   padding-bottom: 84px;
+
+  @media (max-width: $phone-big) {
+    padding-bottom: 32px;
+  }
 }
 
 .left_border {
@@ -276,6 +335,18 @@ $phone-min: 420px;
   right: 0;
   padding-right: 90px;
   border-radius: 8px;
+
+  @media (max-width: $tablet-min) {
+    padding: 32px;
+    padding-right: 64px;
+  }
+
+  @media (max-width: $phone-big) {
+    padding: 0;
+    left: 0;
+    border: none;
+    top: 0;
+  }
 
   p {
     font-size: 20px;
@@ -291,6 +362,14 @@ $phone-min: 420px;
   flex-shrink: 0;
   top: 0;
   left: -32px;
+
+  @media (max-width: $tablet-min) {
+    width: 230px;
+  }
+
+  @media (max-width: $phone-big) {
+    display: none;
+  }
 
   img {
     width: 100%;
@@ -312,6 +391,18 @@ $phone-min: 420px;
     padding-left: 72px;
   }
 
+  @media (max-width: $tablet-min) {
+    padding: 32px;
+    padding-left: 64px;
+  }
+
+  @media (max-width: $phone-big) {
+    padding: 0;
+    left: 0;
+    border: none;
+    top: 0;
+  }
+
   p {
     font-size: 20px;
     line-height: 1.5;
@@ -324,6 +415,14 @@ $phone-min: 420px;
   position: relative;
   z-index: 2;
   flex-shrink: 0;
+
+  @media (max-width: $tablet-min) {
+    width: 230px;
+  }
+
+  @media (max-width: $phone-big) {
+    display: none;
+  }
 
   img {
     width: 100%;
@@ -341,11 +440,19 @@ $phone-min: 420px;
   img {
     width: 80px;
     flex-shrink: 0;
+
+    @media (max-width: $tablet-min) {
+      width: 50px;
+    }
   }
 
   figcaption {
     padding-left: 16px;
     font-size: 28px;
+
+    @media (max-width: $tablet-min) {
+      font-size: 18px;
+    }
   }
 }
 
