@@ -50,6 +50,11 @@ $phone-min: 420px;
   padding: 16px 0;
   margin-right: 16px;
   text-shadow: 1px 1px 1px rgb(88 88 88 / 20%);
+
+  @media (max-width: $phone) {
+    font-size: 14px;
+    margin-right: 0;
+  }
 }
 
 .langs {
@@ -83,6 +88,10 @@ $phone-min: 420px;
     padding-bottom: 32px;
     padding-top: 48px;
     align-items: baseline;
+  }
+
+  @media (max-width: $phone) {
+    padding-bottom: 24px;
   }
 }
 
@@ -126,21 +135,38 @@ $phone-min: 420px;
     padding-right: 16px;
     padding-top: 32px;
   }
+
+  @media (max-width: $phone) {
+    padding-top: 24px;
+  }
 }
 
 .title {
   font-size: 38px;
   margin: 0;
   padding-bottom: 16px;
+
+  @media (max-width: $phone) {
+    font-size: 22px;
+    padding-bottom: 8px;
+  }
 }
 
 .descr {
   margin: 0;
   font-size: 24px;
+
+  @media (max-width: $phone) {
+    font-size: 20px;
+  }
 }
 
 .header_btn {
   margin-top: 32px;
+
+  @media (max-width: $phone) {
+    margin-top: 24px;
+  }
 }
 
 .main_personal {
@@ -154,6 +180,10 @@ $phone-min: 420px;
   width: 370px;
   border-top-right-radius: 8px;
 
+  @media (max-width: $phone) {
+    display: none;
+  }
+
   h2 {
     margin: 0;
     font-size: 20px;
@@ -166,6 +196,18 @@ $phone-min: 420px;
   }
 }
 
+.mob_descr {
+  display: none;
+
+  @media (max-width: $phone) {
+    display: block;
+
+    .descr {
+      font-size: 16px;
+    }
+  }
+}
+
 // info_section
 
 .section {
@@ -175,6 +217,11 @@ $phone-min: 420px;
   @media (max-width: $tablet-min) {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+
+  @media (max-width: $phone) {
+    padding-bottom: 24px;
+    padding-top: 24px;
   }
 }
 
@@ -195,6 +242,11 @@ $phone-min: 420px;
 
   @media (max-width: $phone-big) {
     margin-bottom: 32px;
+  }
+
+  @media (max-width: $phone) {
+    font-size: 24px;
+    padding-bottom: 4px;
   }
 
   &::after {
@@ -218,8 +270,16 @@ $phone-min: 420px;
       font-size: 18px;
     }
 
+    @media (max-width: $phone) {
+      font-size: 16px;
+    }
+
     &:first-child {
       text-indent: 24px;
+
+      @media (max-width: $phone) {
+        text-indent: 16px;
+      }
     }
   }
 }
@@ -233,6 +293,10 @@ $phone-min: 420px;
 
   @media (max-width: $phone-big) {
     padding-bottom: 32px;
+  }
+
+  @media (max-width: $phone-big) {
+    padding-bottom: 24px;
   }
 }
 
@@ -303,6 +367,10 @@ $phone-min: 420px;
       margin-bottom: 12px;
     }
 
+    @media (max-width: $phone) {
+      font-size: 16px;
+    }
+
     &::before {
       content: '';
       width: 12px;
@@ -352,6 +420,10 @@ $phone-min: 420px;
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 8px;
+
+    @media (max-width: $phone) {
+      font-size: 16px;
+    }
   }
 }
 
@@ -407,6 +479,10 @@ $phone-min: 420px;
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 8px;
+
+    @media (max-width: $phone) {
+      font-size: 16px;
+    }
   }
 }
 
@@ -431,6 +507,12 @@ $phone-min: 420px;
 
 .h3 {
   font-size: 28px;
+
+  @media (max-width: $phone) {
+    font-size: 24px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
 }
 
 .license {
@@ -467,6 +549,12 @@ $phone-min: 420px;
   margin: 0 auto;
   padding: 32px;
   border-radius: 8px;
+
+  @media (max-width: $phone) {
+    border: none;
+    padding: 0;
+    padding-bottom: 8px;
+  }
 }
 
 .contact_label {
@@ -504,6 +592,10 @@ $phone-min: 420px;
 .btn_form_group {
   display: flex;
   align-items: center;
+
+  @media (max-width: $phone-big) {
+    flex-wrap: wrap;
+  }
 }
 
 @keyframes spin {
@@ -524,4 +616,10 @@ $phone-min: 420px;
 .status_msg {
   margin-left: 16px;
   font-size: 16px;
+
+  @media (max-width: $phone-big) {
+    margin-left: 0;
+    padding-top: 12px;
+    width: 100%;
+  }
 }

@@ -91,6 +91,14 @@ export default function IndexContent(props) {
           <p className={styles.descr}>
             <Trans lang={lang}>Редько Тетяна Георгіївна</Trans>
           </p>
+          <div className={styles.mob_descr}>
+            <p className={styles.descr}>
+              <Trans lang={lang}>Кандидат медичних наук</Trans>
+            </p>
+            <p className={styles.descr}>
+              <Trans lang={lang}>Психіатр, медичний психолог, гіпнотерапевт</Trans>
+            </p>
+          </div>
           <a className={`${styles.btn} ${styles.header_btn}`}>
             <Trans lang={lang}>Зв'язатися</Trans>
           </a>

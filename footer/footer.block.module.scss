@@ -65,6 +65,10 @@ $phone-min: 420px;
     flex: auto;
   }
 
+  @media (max-width: $phone) {
+    padding: 0;
+  }
+
   h3 {
     margin: 0;
     font-size: 17px;
