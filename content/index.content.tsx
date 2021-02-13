@@ -99,7 +99,7 @@ export default function IndexContent(props) {
               <Trans lang={lang}>Психіатр, медичний психолог, гіпнотерапевт</Trans>
             </p>
           </div>
-          <a className={`${styles.btn} ${styles.header_btn}`}>
+          <a href="#anchor-form" className={`${styles.btn} ${styles.header_btn}`}>
             <Trans lang={lang}>Зв'язатися</Trans>
           </a>
         </div>
@@ -301,6 +301,7 @@ export default function IndexContent(props) {
 
       {/*  form_section */}
       <section className={`${styles.section} ${styles.info_section}`}>
+        <a name="anchor-form" />
         <div data-container>
           <h2 className={styles.h2}>
             <Trans lang={lang}>Зв'язатися</Trans>

@@ -213,6 +213,7 @@ $phone-min: 420px;
 .section {
   padding-top: 48px;
   padding-bottom: 48px;
+  position: relative;
 
   @media (max-width: $tablet-min) {
     padding-top: 32px;
