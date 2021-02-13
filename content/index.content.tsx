@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 
 //helpers
 import Trans from '../trans/trans';
@@ -64,6 +65,10 @@ export default function IndexContent(props) {
 
   return (
     <main>
+      <Head>
+        <title>Редько Тетяна Георгіївна | Консультація психолога</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <header className={styles.header}>
         <div data-container className={styles.header_container}>
           <Link href={href}>
@@ -104,7 +109,7 @@ export default function IndexContent(props) {
           </a>
         </div>
         <figure className={styles.main_figure}>
-          <img loading="lazy" src="/main2.jpg" alt="" />
+          <img loading="lazy" src="/index.jpg" alt="" />
           <div className={styles.main_personal}>
             <h2>
               <Trans lang={lang}>Редько Тетяна Георгіївна</Trans>
@@ -188,49 +193,60 @@ export default function IndexContent(props) {
             <figure className={styles.prof_figure}>
               <img loading="lazy" src="/prof.jpg" alt="Редько Тетяна Георгіївна" />
             </figure>
-
             <ul className={styles.prof_ul}>
               <li>
-                <Trans lang={lang}>фобій</Trans>
+                <Trans lang={lang}>фобії</Trans>
               </li>
               <li>
-                <Trans lang={lang}>тривожних станів</Trans>
+                <Trans lang={lang}>тривожні стани</Trans>
               </li>
               <li>
-                <Trans lang={lang}>депресій</Trans>
+                <Trans lang={lang}>посттравма-тичні стресові розлади</Trans>
               </li>
               <li>
-                <Trans lang={lang}>афективних розладів</Trans>
+                <Trans lang={lang}>депресії, у тому числі післяпологові</Trans>
               </li>
               <li>
-                <Trans lang={lang}>порушень режиму сну</Trans>
+                <Trans lang={lang}>біполярний афективний розлад</Trans>
               </li>
               <li>
-                <Trans lang={lang}>післяпологових депресій</Trans>
+                <Trans lang={lang}>порушення сну</Trans>
               </li>
               <li>
-                <Trans lang={lang}>нервової анорексії та булімії</Trans>
+                <Trans lang={lang}>нервову анорексію</Trans>
               </li>
               <li>
-                <Trans lang={lang}>різних видів залежності</Trans>
+                <Trans lang={lang}>булімію</Trans>
               </li>
               <li>
-                <Trans lang={lang}>шизофренії</Trans>
+                <Trans lang={lang}>розлади статевої ідентифікації</Trans>
               </li>
               <li>
-                <Trans lang={lang}>панічних станів</Trans>
+                <Trans lang={lang}>шизофренію</Trans>
               </li>
               <li>
-                <Trans lang={lang}>психотичних станів</Trans>
+                <Trans lang={lang}>розлади емоцій</Trans>
               </li>
               <li>
-                <Trans lang={lang}>розладів статевої ідентифікації</Trans>
+                <Trans lang={lang}>панічні стани</Trans>
               </li>
               <li>
-                <Trans lang={lang}>психосоматичних розладів</Trans>
+                <Trans lang={lang}>психосоматичні розлади</Trans>
               </li>
               <li>
-                <Trans lang={lang}>неврозів</Trans>
+                <Trans lang={lang}>неврози</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>розлади психіки, пов`язаніз віковими змінами</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>зниженням пам`яті</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>органічні психічні розлади</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>розлади, які супроводжуються суїцидальною поведінкою</Trans>
               </li>
             </ul>
           </div>
@@ -253,11 +269,10 @@ export default function IndexContent(props) {
               </p>
               <p>
                 <Trans lang={lang}>
-                  Проводжу пропрацювання в регресивному гіпнозі пацієнтів з панічними станами,
-                  фобіями, порушеннями сну, розладами харчової поведінки, статевими розладами,
-                  проблемами, викликаними минулими подіями, що виявились хворобливими з емоційної
-                  та/або фізичної точки зору, причиною яких можуть бути декілька випадків; різних
-                  видів залежності, психосоматичних розладів, депресивних станів.
+                  Проводжу пропрацювання в регресивному гіпнозі панічних станів, фобій, тривоги,
+                  грусті, провини, образи, невпевненості в собі, злості, ревнощів, ненависті, різних
+                  видів залежності (алкогольної, тютюнової), токсичних стосунків, психосоматичних
+                  розладів, депресивних станів, кризових сімейних станів.
                 </Trans>
               </p>
             </div>

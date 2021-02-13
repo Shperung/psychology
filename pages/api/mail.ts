@@ -11,7 +11,7 @@ let transporter = nodemailer.createTransport({
 
 const globalMailOptions = {
   from: 't.g.redko@gmail.com',
-  to: 'viktorkrav4uk87@gmail.com',
+  to: 'viktorkrav4uk87@gmail.com, t.g.redko@gmail.com',
 };
 
 
