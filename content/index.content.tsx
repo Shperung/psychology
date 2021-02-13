@@ -104,7 +104,7 @@ export default function IndexContent(props) {
           </a>
         </div>
         <figure className={styles.main_figure}>
-          <img src="/main2.jpg" alt="" />
+          <img loading="lazy" src="/main2.jpg" alt="" />
           <div className={styles.main_personal}>
             <h2>
               <Trans lang={lang}>Редько Тетяна Георгіївна</Trans>
@@ -169,7 +169,7 @@ export default function IndexContent(props) {
               <Trans lang={lang}>Приватна практика</Trans>
             </h3>
             <figure className={styles.license}>
-              <img src="/license.svg" alt="Ліцензія" />
+              <img loading="lazy" src="/license.svg" alt="Ліцензія" />
               <figcaption>
                 <Trans lang={lang}>Ліцензія МОЗ України від 03.10.18р. № 0310/13-М</Trans>
               </figcaption>
@@ -186,7 +186,7 @@ export default function IndexContent(props) {
           </h2>
           <div className={styles.prof_blocks}>
             <figure className={styles.prof_figure}>
-              <img src="/prof.jpg" alt="Редько Тетяна Георгіївна" />
+              <img loading="lazy" src="/prof.jpg" alt="Редько Тетяна Георгіївна" />
             </figure>
 
             <ul className={styles.prof_ul}>
@@ -263,7 +263,7 @@ export default function IndexContent(props) {
             </div>
             <div className={styles.prof_blocks}>
               <figure className={styles.hypnosis_figure}>
-                <img src="/hypnosis.jpg" alt="Редько Тетяна Георгіївна" />
+                <img loading="lazy" src="/hypnosis.jpg" alt="Редько Тетяна Георгіївна" />
               </figure>
             </div>
           </div>
@@ -278,7 +278,7 @@ export default function IndexContent(props) {
           </h2>
           <div className={styles.prof_blocks}>
             <figure className={styles.analis_figure}>
-              <img src="/main.jpg" alt="Редько Тетяна Георгіївна" />
+              <img loading="lazy" src="/main.jpg" alt="Редько Тетяна Георгіївна" />
             </figure>
             <div className={styles.analis_border}>
               <p>
@@ -295,6 +295,36 @@ export default function IndexContent(props) {
                 </Trans>
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/*  price_section */}
+      <section className={`${styles.section} ${styles.price_section}`}>
+        <div data-container>
+          <h2 className={styles.h2}>
+            <Trans lang={lang}>Ціна</Trans>
+          </h2>
+
+          <div className={styles.price_wrap}>
+            <article className={styles.price_article}>
+              <h3 className={styles.price_h3}>
+                <Trans lang={lang}>Консультація</Trans>
+              </h3>
+              <b className={styles.price_summ}>700 грн</b>
+              <h4 className={styles.price_h4}>
+                1 <Trans lang={lang}>прийом</Trans>
+              </h4>
+            </article>
+            <article className={styles.price_article}>
+              <h3 className={styles.price_h3}>
+                <Trans lang={lang}>Гіпнотерапія</Trans>
+              </h3>
+              <b className={styles.price_summ}>3500 грн</b>
+              <h4 className={styles.price_h4}>
+                1 <Trans lang={lang}>сесія</Trans>
+              </h4>
+            </article>
           </div>
         </div>
       </section>
