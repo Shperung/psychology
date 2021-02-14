@@ -30,7 +30,7 @@ export default function mail(req, res) {
   if (req.body.name && req.body.phone) {
     const mailOptions = {   
       ...globalMailOptions,
-       subject: 'Повідомлення з сайту tatyana-redko.com',
+       subject: 'Повідомлення з сайту tetiana-redko.com',
        text: `Відправлена заявка з сайту 
          \n Ім’я - ${req.body.name}
          \n Телефон - ${req.body.phone}
