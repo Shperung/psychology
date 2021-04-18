@@ -362,82 +362,144 @@ export default function IndexContent(props) {
           <h2 className={styles.h2}>
             <Trans lang={lang}>Зв'язатися</Trans>
           </h2>
-          <form onSubmit={handleSubmit} className={styles.contact_form}>
-            <label className={styles.contact_label}>
-              <span className={styles.contact_label_text}>
-                <Trans lang={lang}>Ім'я</Trans>
-                <sup>*</sup>
-              </span>
-              <input
-                className={styles.contact_fild}
-                value={formData.name}
-                type="text"
-                name="name"
-                required
-                onChange={handleChange}
-              />
-            </label>
+          <div className={styles.contact_wrap}>
+            <div className={styles.contact_container}>
+              <h3 className={styles.h3}>
+                <Trans lang={lang}>Запис онлайн та контакти</Trans>
+              </h3>
+              <address className={styles.contact_item}>
+                <h4>
+                  <Trans lang={lang}>Адреса</Trans>:
+                </h4>
+                <p>
+                  <Trans lang={lang}>вул. Хмельницьке Шосе, 23, поверх 2, каб. 115.</Trans>
+                </p>
+                <p>
+                  <Trans lang={lang}>Вінниця</Trans>, 21036
+                </p>
+              </address>
 
-            <label className={styles.contact_label}>
-              <span className={styles.contact_label_text}>
-                <Trans lang={lang}>Телефон</Trans>
-                <sup>*</sup>
-              </span>
-              <input
-                className={styles.contact_fild}
-                type="tel"
-                value={formData.phone}
-                name="phone"
-                required
-                onChange={handleChange}
-                placeholder="+380000000000"
-              />
-            </label>
+              <div className={styles.contact_item}>
+                <h4>
+                  <Trans lang={lang}>Графік роботи</Trans>:
+                </h4>
+                <ul>
+                  <li>
+                    <Trans lang={lang}>Кожен день</Trans> 16.00-19.00
+                  </li>
+                  <li>
+                    <Trans lang={lang}>Субота</Trans> 10.00-15.00
+                  </li>
+                  <li>
+                    <Trans lang={lang}>Прийом за попереднім записом.</Trans>
+                  </li>
+                </ul>
+              </div>
 
-            <label className={styles.contact_label}>
-              <span className={styles.contact_label_text}>Email</span>
-              <input
-                className={styles.contact_fild}
-                value={formData.email}
-                type="email"
-                name="email"
-                onChange={handleChange}
-              />
-            </label>
+              <div className={styles.contact_item}>
+                <h4>
+                  <Trans lang={lang}>Телефон</Trans>:
+                </h4>
+                <ul>
+                  <li className={styles.hover_li}>
+                    <a href="tel:+380509584113">+38-050-958-41-13</a>
+                  </li>
+                  <li className={styles.hover_li}>
+                    <a href="tel:+380939167544">+38-093-916-75-44 (viber)</a>
+                  </li>
+                  <li className={styles.hover_li}>
+                    <a href="tel:+380681627732">+38-068-162-77-32</a>
+                  </li>
+                </ul>
+              </div>
 
-            <label className={styles.contact_label}>
-              <span className={styles.contact_label_text}>
-                <Trans lang={lang}>Повідомлення</Trans>
-              </span>
-              <textarea
-                value={formData.text}
-                className={`${styles.contact_fild} ${styles.contact_textarea}`}
-                name="text"
-                onChange={handleChange}
-              />
-            </label>
-
-            <div className={styles.btn_form_group}>
-              <button disabled={loading} className={`${styles.btn} ${styles.form_btn}`}>
-                <Trans lang={lang}>Зв'язатися</Trans>
-              </button>
-              {loading ? (
-                <div className={styles.loader}>
-                  <img src="/loading.svg" width="32px" height="32px" />
-                </div>
-              ) : null}
-
-              <div className={`${styles.status_msg} `}>
-                <Trans lang={lang}>
-                  {status === 'success'
-                    ? 'Повідомлення успішно відправлено'
-                    : status === 'error'
-                    ? 'Не вдялось відправити повідомлення, спродуйте ше раз'
-                    : ''}
-                </Trans>
+              <div className={styles.contact_item}>
+                <h4>Email:</h4>
+                <ul>
+                  <li className={styles.hover_li}>
+                    <a href="mailto:t.g.redko@gmail.com">t.g.redko@gmail.com</a>
+                  </li>
+                </ul>
               </div>
             </div>
-          </form>
+
+            <form onSubmit={handleSubmit} className={styles.contact_form}>
+              <label className={styles.contact_label}>
+                <span className={styles.contact_label_text}>
+                  <Trans lang={lang}>Ім'я</Trans>
+                  <sup>*</sup>
+                </span>
+                <input
+                  className={styles.contact_fild}
+                  value={formData.name}
+                  type="text"
+                  name="name"
+                  required
+                  onChange={handleChange}
+                />
+              </label>
+
+              <label className={styles.contact_label}>
+                <span className={styles.contact_label_text}>
+                  <Trans lang={lang}>Телефон</Trans>
+                  <sup>*</sup>
+                </span>
+                <input
+                  className={styles.contact_fild}
+                  type="tel"
+                  value={formData.phone}
+                  name="phone"
+                  required
+                  onChange={handleChange}
+                  placeholder="+380000000000"
+                />
+              </label>
+
+              <label className={styles.contact_label}>
+                <span className={styles.contact_label_text}>Email</span>
+                <input
+                  className={styles.contact_fild}
+                  value={formData.email}
+                  type="email"
+                  name="email"
+                  onChange={handleChange}
+                />
+              </label>
+
+              <label className={styles.contact_label}>
+                <span className={styles.contact_label_text}>
+                  <Trans lang={lang}>Повідомлення</Trans>
+                </span>
+                <textarea
+                  value={formData.text}
+                  className={`${styles.contact_fild} ${styles.contact_textarea}`}
+                  name="text"
+                  onChange={handleChange}
+                />
+              </label>
+
+              <div className={styles.btn_form_group}>
+                <button disabled={loading} className={`${styles.btn} ${styles.form_btn}`}>
+                  <Trans lang={lang}>Зв'язатися</Trans>
+                </button>
+                {loading ? (
+                  <div className={styles.loader}>
+                    <img src="/loading.svg" width="32px" height="32px" />
+                  </div>
+                ) : null}
+
+                <div className={`${styles.status_msg} `}>
+                  <Trans lang={lang}>
+                    {status === 'success'
+                      ? 'Повідомлення успішно відправлено'
+                      : status === 'error'
+                      ? 'Не вдялось відправити повідомлення, спродуйте ше раз'
+                      : ''}
+                  </Trans>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
 
