@@ -253,6 +253,17 @@ export default function IndexContent(props) {
         </div>
       </section>
 
+      <section className={styles.anchor_contact}>
+        <div data-container>
+          <span className={styles.anchor_text}>
+            <Trans lang={lang}>Записатися на консультацію прямо зараз!</Trans>
+          </span>
+          <a href="#anchor-form" className={`${styles.btn} ${styles.btn_white}`}>
+            <Trans lang={lang}>Відправити заявку</Trans>
+          </a>
+        </div>
+      </section>
+
       {/*  hypnosis_section */}
       <section className={`${styles.section} ${styles.hypnosis_section}`}>
         <div data-container>
@@ -333,11 +344,11 @@ export default function IndexContent(props) {
             </article>
             <article className={styles.price_article}>
               <h3 className={styles.price_h3}>
-                <Trans lang={lang}>Гіпнотерапія</Trans>
+                Online - <Trans lang={lang}>Консультація</Trans>
               </h3>
-              <b className={styles.price_summ}>3500 грн</b>
+              <b className={styles.price_summ}>600 грн</b>
               <h4 className={styles.price_h4}>
-                1 <Trans lang={lang}>сесія</Trans>
+                1 <Trans lang={lang}>прийом</Trans>
               </h4>
             </article>
           </div>

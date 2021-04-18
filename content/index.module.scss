@@ -18,6 +18,7 @@ $phone-min: 420px;
   cursor: pointer;
   display: block;
   text-decoration: none;
+  font-weight: bold;
 
   &:disabled {
     opacity: 0.6;
@@ -25,6 +26,15 @@ $phone-min: 420px;
 
   &:hover {
     background-color: var(--color-primary-dark);
+  }
+}
+
+.btn_white {
+  color: var(--color-primary-black);
+  background-color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-white05);
   }
 }
 
@@ -686,4 +696,30 @@ $phone-min: 420px;
   padding-top: 8px;
   font-style: normal;
   font-weight: 200;
+}
+
+.anchor_contact {
+  background-color: var(--color-primary-black);
+
+  [data-container] {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $tablet-min) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+.anchor_text {
+  color: var(--color-white);
+  font-size: 20px;
+  padding-right: 16px;
+
+  @media (max-width: $tablet-min) {
+    margin-bottom: 16px;
+  }
 }
