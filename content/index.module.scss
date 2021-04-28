@@ -186,12 +186,12 @@ $phone-min: 420px;
   bottom: 0;
   background-color: var(--color-primary);
   color: var(--color-white);
-  padding: 42px;
-  width: 370px;
+  padding: 20px;
+  width: auto;
   border-top-right-radius: 8px;
 
   @media (max-width: $phone) {
-    display: none;
+    padding: 12px;
   }
 
   h2 {

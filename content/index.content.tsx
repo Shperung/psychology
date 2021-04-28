@@ -91,19 +91,16 @@ export default function IndexContent(props) {
       <section className={styles.main_section}>
         <div className={styles.main_section_heading}>
           <h1 className={styles.title}>
-            <Trans lang={lang}>Консультація психолога</Trans>
+            <Trans lang={lang}>Редько Тетяна Георгіївна</Trans>
           </h1>
           <p className={styles.descr}>
-            <Trans lang={lang}>Редько Тетяна Георгіївна</Trans>
-          </p>
-          <div className={styles.mob_descr}>
             <p className={styles.descr}>
               <Trans lang={lang}>Кандидат медичних наук</Trans>
             </p>
             <p className={styles.descr}>
               <Trans lang={lang}>Психіатр, медичний психолог, гіпнотерапевт</Trans>
             </p>
-          </div>
+          </p>
           <a href="#anchor-form" className={`${styles.btn} ${styles.header_btn}`}>
             <Trans lang={lang}>Зв'язатися</Trans>
           </a>
@@ -111,14 +108,10 @@ export default function IndexContent(props) {
         <figure className={styles.main_figure}>
           <img loading="lazy" src="/index.jpg" alt="" />
           <div className={styles.main_personal}>
-            <h2>
-              <Trans lang={lang}>Редько Тетяна Георгіївна</Trans>
-            </h2>
             <p className={styles.person}>
-              <Trans lang={lang}>Кандидат медичних наук</Trans>
-            </p>
-            <p className={styles.person}>
-              <Trans lang={lang}>Психіатр, медичний психолог, гіпнотерапевт</Trans>
+              <Trans lang={lang}>
+                <Trans lang={lang}>Ми дбаємо про ваше здоров'я</Trans>
+              </Trans>
             </p>
           </div>
         </figure>
@@ -128,13 +121,13 @@ export default function IndexContent(props) {
       <section className={`${styles.section} ${styles.info_section}`}>
         <div data-container>
           <h2 className={styles.h2}>
-            <Trans lang={lang}>Ми дбаємо про ваше здоров'я</Trans>
+            <Trans lang={lang}>Мене звати Редько Тетяна</Trans>
           </h2>
           <div className={styles.content}>
             <p>
               <Trans lang={lang}>
-                Редько Тетяна Георгіївна закінчила Вінницький Національний медичний університет ім.
-                М. І. Пирогова за спеціальністю «психіатрія».
+                Закінчила Вінницький Національний медичний університет ім. М. І. Пирогова за
+                спеціальністю «психіатрія».
               </Trans>{' '}
               <Trans lang={lang}>Лікар-психіатр вищої кваліфікаційної категорії.</Trans>{' '}
               <Trans lang={lang}>
@@ -187,14 +180,14 @@ export default function IndexContent(props) {
       <section className={`${styles.section} ${styles.prof_section}`}>
         <div data-container>
           <h2 className={styles.h2}>
-            <Trans lang={lang}>Займаюсь лікуванням</Trans>
+            <Trans lang={lang}>В яких випадках я можу Вам допомогти:</Trans>
           </h2>
           <div className={styles.prof_blocks}>
             <figure className={styles.prof_figure}>
               <img loading="lazy" src="/prof.jpg" alt="Редько Тетяна Георгіївна" />
             </figure>
             <ul className={styles.prof_ul}>
-              <li>
+              {/*<li>
                 <Trans lang={lang}>фобії</Trans>
               </li>
               <li>
@@ -247,6 +240,54 @@ export default function IndexContent(props) {
               </li>
               <li>
                 <Trans lang={lang}>розлади, які супроводжуються суїцидальною поведінкою</Trans>
+              </li>*/}
+              <li>
+                <Trans lang={lang}>Байдужість</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>Імпульсивність</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>Невпевненість у собі</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>Агресія</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>Злостивість</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>Маячні ідеї</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>Манія</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>Галюцинації</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>Непосидючість</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>Зниження пам'яті</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>Різні види залежності</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>Апатія</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>Відчай</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>Смуток</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>Злість</Trans>
+              </li>
+              <li>
+                <Trans lang={lang}>Образа</Trans>
               </li>
             </ul>
           </div>
