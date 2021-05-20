@@ -387,7 +387,7 @@ export default function IndexContent(props) {
               <h3 className={styles.price_h3}>
                 Online - <Trans lang={lang}>Консультація</Trans>
               </h3>
-              <b className={styles.price_summ}>600 грн</b>
+              <b className={styles.price_summ}>800 грн</b>
               <h4 className={styles.price_h4}>
                 1 <Trans lang={lang}>прийом</Trans>
               </h4>
