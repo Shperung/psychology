@@ -378,7 +378,7 @@ export default function IndexContent(props) {
               <h3 className={styles.price_h3}>
                 <Trans lang={lang}>Консультація</Trans>
               </h3>
-              <b className={styles.price_summ}>700 грн</b>
+              <b className={styles.price_summ}>900 грн</b>
               <h4 className={styles.price_h4}>
                 1 <Trans lang={lang}>прийом</Trans>
               </h4>
@@ -387,9 +387,20 @@ export default function IndexContent(props) {
               <h3 className={styles.price_h3}>
                 Online - <Trans lang={lang}>Консультація</Trans>
               </h3>
-              <b className={styles.price_summ}>800 грн</b>
+              <b className={styles.price_summ}>1000 грн</b>
               <h4 className={styles.price_h4}>
                 1 <Trans lang={lang}>прийом</Trans>
+              </h4>
+            </article>
+          </div>
+          <div className={styles.price_wrap}>
+            <article className={styles.price_article_full}>
+              <h3 className={styles.price_h3}>
+                <Trans lang={lang}>Cесія гіпнозу</Trans>
+              </h3>
+              <b className={styles.price_summ}>4000 грн</b>
+              <h4 className={styles.price_h4}>
+                1 <Trans lang={lang}>сесія</Trans>
               </h4>
             </article>
           </div>

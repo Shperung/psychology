@@ -667,6 +667,7 @@ $phone-min: 420px;
 
   @media (max-width: $phone-big) {
     width: 100%;
+    padding: 16px 22px;
   }
 
   &:first-child {
@@ -674,9 +675,24 @@ $phone-min: 420px;
   }
 }
 
+.price_article_full {
+  padding: 32px;
+  color: var(--color-white);
+  background-color: #007875;
+  width: 100%;
+
+  @media (max-width: $phone-big) {
+    padding: 16px 22px;
+  }
+}
+
 .price_summ {
   color: var(--color-light);
   font-size: 32px;
+
+  @media (max-width: $phone-big) {
+    font-size: 24px;
+  }
 }
 
 .price_h3 {
@@ -685,6 +701,11 @@ $phone-min: 420px;
   margin-bottom: 16px;
   font-weight: 400;
   letter-spacing: 1px;
+
+  @media (max-width: $phone-big) {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
 }
 
 .price_h4 {
@@ -694,6 +715,12 @@ $phone-min: 420px;
   padding-top: 8px;
   font-style: normal;
   font-weight: 200;
+
+  @media (max-width: $phone-big) {
+    font-size: 20px;
+    margin-bottom: 4px;
+    padding-top: 0px;
+  }
 }
 
 .anchor_contact {
