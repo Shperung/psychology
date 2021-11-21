@@ -1,0 +1,19 @@
+.active {
+  color: green;
+}
+
+.logo_hover {
+  display: none;
+}
+
+.logo {
+  &:hover {
+    img {
+      display: none;
+
+      &.logo_hover {
+        display: block;
+      }
+    }
+  }
+}
