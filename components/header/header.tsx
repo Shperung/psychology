@@ -38,30 +38,42 @@ const NAVIGAIONS = [
 ];
 
 export default function Header() {
-  const { pathname } = useRouter();
+  const { pathname, locales, asPath } = useRouter();
 
   return (
     <header>
+      <div>
+        <div>
+          {locales.map(locale => {
+            return (
+              <Link locale={locale} key={locale} href={asPath}>
+                <a>{locale}</a>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+
       <Link href="/">
         <a className={styles.logo}>
           <picture>
-            <source srcSet="./logo-main.png, ./logo-main-2x.png 2x" />
+            <source srcSet="/logo-main.png, /logo-main-2x.png 2x" />
             <img
               alt="Редько Тетяна Георгіївна"
               title="Редько Тетяна Георгіївна"
               width="100px"
               height="100px"
-              src="./logo-main.png"
+              src="/logo-main.png"
             />
           </picture>
           <picture>
-            <source srcSet="./logo-main-hover.png, ./logo-main-hover-2x.png 2x" />
+            <source srcSet="/logo-main-hover.png, /logo-main-hover-2x.png 2x" />
             <img
               alt="Редько Тетяна Георгіївна"
               title="Редько Тетяна Георгіївна"
               width="100px"
               height="100px"
-              src="./logo-main.png"
+              src="/logo-main.png"
               className={styles.logo_hover}
             />
           </picture>
