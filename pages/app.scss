@@ -1,0 +1,75 @@
+:root {
+  --color-primary: #1a9fdb;
+  --color-primary-dark: #0073a7;
+  --color-white: #fdfff5;
+  --color-dark: #363636;
+  --color-light: #aaaaad;
+  --color-success: #00b895;
+  --color-soft: #fee;
+  --color-lime: #fcfaf5;
+  --color-border: #ddd;
+  --color-white05: #fdfff5;
+  --width-container: 1360px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+  line-height: 1.42857143;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+a {
+  color: inherit;
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+[data-container] {
+  width: var(--width-container);
+  padding: 0 16px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+[data-mt8] {
+  margin-top: 8px;
+}
+
+[data-mb8] {
+  margin-botom: 8px;
+}
+
+#anchor-form {
+  position: absolute;
+  left: 0;
+  top: -40px;
+}
