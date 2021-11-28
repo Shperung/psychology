@@ -1,6 +1,7 @@
 .nav {
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-lime);
 }
 
 [data-container].info {
@@ -16,6 +17,10 @@
   margin-bottom: 8px;
   display: flex;
   align-items: center;
+
+  img {
+    margin-right: 8px;
+  }
 }
 
 .info_lang {
@@ -30,7 +35,7 @@
 }
 
 .active {
-  color: green;
+  color: var(--color-success);
 }
 
 .logo_hover {
@@ -38,12 +43,89 @@
 }
 
 .logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   &:hover {
     img {
       display: none;
 
       &.logo_hover {
         display: block;
+      }
+    }
+  }
+}
+
+.info_item_link {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-success);
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
+}
+
+.locale {
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  padding-top: 3px;
+}
+
+.locale_active {
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+
+.nav_block {
+  display: flex;
+  height: 90px;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0;
+
+  a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    margin-left: 24px;
+    text-decoration: none;
+    position: relative;
+    font-weight: 600;
+    font-size: 17px;
+
+    &:after {
+      content: '';
+      width: 0;
+      height: 3px;
+      background-color: var(--color-success);
+      position: absolute;
+      left: 50%;
+      bottom: 4px;
+      transform: translate(-50%);
+      transition: 0.15s ease-out;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
       }
     }
   }

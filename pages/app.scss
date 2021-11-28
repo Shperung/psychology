@@ -1,12 +1,12 @@
 :root {
   --color-primary: #1a9fdb;
   --color-primary-dark: #0073a7;
-  --color-white: #fdfff5;
+  --color-white: #fefff9;
   --color-dark: #363636;
   --color-light: #aaaaad;
-  --color-success: #00b895;
+  --color-success: #008d72;
   --color-soft: #fee;
-  --color-lime: #fcfaf5;
+  --color-lime: #fff9eb;
   --color-border: #ddd;
   --color-white05: #fdfff5;
   --width-container: 1360px;
@@ -66,6 +66,12 @@ ul {
 
 [data-mb8] {
   margin-botom: 8px;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 #anchor-form {
