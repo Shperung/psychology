@@ -2,6 +2,9 @@
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
   background-color: var(--color-lime);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 [data-container].info {

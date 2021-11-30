@@ -35,6 +35,9 @@
   min-width: 100%;
   padding-left: 10px;
   height: 100%;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
 }
 
 .embla__slide__inner {
@@ -97,8 +100,36 @@
 
 .slide_2 {
   background-image: url('/slides/slide-2.jpeg');
+  background-position: top right;
 }
 
 .slide_3 {
   background-image: url('/slides/slide-3.jpeg');
+  background-position: top right;
+}
+
+.slide_container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.slide_inner {
+  width: 50%;
+
+  h2 {
+    font-size: 48px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+  }
+}
+
+.slide_inner_1 {
+  margin-left: auto;
+}
+
+.slide_inner_2 {
+  h2 {
+    font-size: 38px;
+  }
 }
