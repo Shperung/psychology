@@ -1,6 +1,7 @@
 {
   "name": "psychology",
-  "private": true,
+  "version": "1.0.0",
+  "author": "Shperung",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
