@@ -1,0 +1,18 @@
+.btn {
+  color: var(--color-white);
+  border: none;
+  margin: 0;
+  background-color: var(--color-success);
+  padding: 16px 24px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+
+  &:hover {
+    background-color: var(--color-success-dark);
+  }
+}

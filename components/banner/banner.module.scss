@@ -1,3 +1,5 @@
+@import '../layout/var.scss';
+
 .embla {
   position: relative;
   max-width: 100%;
@@ -35,9 +37,16 @@
   min-width: 100%;
   padding-left: 10px;
   height: 100%;
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: cover;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
 }
 
 .embla__slide__inner {
@@ -95,27 +104,33 @@
 }
 
 .slide_1 {
-  background-image: url('/slides/slide-1.jpeg');
+  //background-image: url('/slides/slide-1.jpeg');
 }
 
 .slide_2 {
-  background-image: url('/slides/slide-2.jpeg');
-  background-position: top right;
+  // background-image: url('/slides/slide-2.jpeg');
+  // background-position: top right;
 }
 
 .slide_3 {
-  background-image: url('/slides/slide-3.jpeg');
-  background-position: top right;
+  // background-image: url('/slides/slide-3.jpeg');
+  // background-position: top right;
 }
 
 .slide_container {
   display: flex;
   align-items: center;
   height: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .slide_inner {
-  width: 50%;
+  width: 45%;
+
+  @media (max-width: $min-container) {
+    width: 50%;
+  }
 
   h2 {
     font-size: 48px;

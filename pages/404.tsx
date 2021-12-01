@@ -20,7 +20,7 @@ export default function Error() {
       <Head>
         <title>Редько Тетяна Георгіївна | Сторінка відсутня</title>
       </Head>
-      Error
+      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Сторінка відсутня</h3>
     </div>
   );
 }
