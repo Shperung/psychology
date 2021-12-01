@@ -2,7 +2,7 @@
 import Layout from '../components/layout/layout';
 
 // styles
-import './app.scss';
+import '../components/layout/app.scss';
 
 function MyApp({ Component, pageProps }) {
   return (
