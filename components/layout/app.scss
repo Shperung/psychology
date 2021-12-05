@@ -4,17 +4,31 @@
   --color-white: #fefff9;
   --color-dark: #363636;
   --color-light: #aaaaad;
-  --color-success: #008d72;
-  --color-success-dark: #007660;
-  --color-soft: #fee;
+  --color-success: #006c84;
+  --color-success-dark: #016378;
+  --color-soft: #fff1f1;
   --color-lime: #fff9eb;
   --color-border: #ddd;
+  --color-dawn: #ffccbb;
   --color-white05: #fdfff5;
   --width-container: 1360px;
+  --font-header: 'Comfortaa', cursive;
 }
 
 * {
   box-sizing: border-box;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 body {
@@ -25,14 +39,17 @@ body {
   font-weight: 400;
   padding: 0;
   margin: 0;
-  min-width: 320px;
+  min-width: 1220px;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   height: 100%;
   min-height: 100vh;
   scroll-behavior: smooth;
-  background-color: var(--color-white);
+  //background: linear-gradient(-45deg, var(--color-lime), var(--color-white));
+  background: var(--color-white);
+  // background-size: 400% 400%;
+  // animation: gradient 15s ease infinite;
   color: var(--color-dark);
 }
 
@@ -56,6 +73,7 @@ ul {
 
 [data-container] {
   width: var(--width-container);
+  max-width: 100%;
   padding: 0 16px;
   max-width: 100%;
   margin: 0 auto;
@@ -73,10 +91,46 @@ ul {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 #anchor-form {
   position: absolute;
   left: 0;
   top: -40px;
+}
+
+[data-heading] {
+  position: relative;
+  text-align: center;
+  font-size: 48px;
+  font-family: var(--font-header);
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 48px;
+
+  &::before {
+    width: 300px;
+    height: 1px;
+    content: '';
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--color-border);
+    position: absolute;
+  }
+
+  &::after {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    content: '';
+    bottom: -32px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--color-dawn);
+    position: absolute;
+    border: 12px solid var(--color-white);
+  }
 }
