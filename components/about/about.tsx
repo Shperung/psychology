@@ -10,12 +10,14 @@ import stylesBtns from '../button/button.module.scss';
 
 export default function AboutBlock(props) {
   const { inMain = false } = props;
+  const { t } = useTrans();
+
   return (
     <section data-container className={styles.container}>
       <figure className={styles.figure}>
         <img
           src={inMain ? '/photo/Photo_462в.jpeg' : '/photo/Photo_367в.jpeg'}
-          alt=""
+          alt={t('Редько Тетяна Георгіївна')}
           width="400px"
         />
       </figure>
