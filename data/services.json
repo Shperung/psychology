@@ -1,0 +1,48 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "img": "services/s1s.jpeg",
+      "url": "/",
+      "ua": {
+        "label": "Депресії"
+      },
+      "ru": {
+        "label": "Депрессии"
+      }
+    },
+    {
+      "id": 2,
+      "img": "/services/s2s.jpeg",
+      "url": "/",
+      "ua": {
+        "label": "Імпульсивність"
+      },
+      "ru": {
+        "label": "Импульсивность"
+      }
+    },
+    {
+      "id": 3,
+      "img": "/services/s3s.jpeg",
+      "url": "/",
+      "ua": {
+        "label": "Байдужість"
+      },
+      "ru": {
+        "label": "Безразличие"
+      }
+    },
+    {
+      "id": 4,
+      "img": "/services/s4s.jpeg",
+      "url": "/",
+      "ua": {
+        "label": "Панічні стани"
+      },
+      "ru": {
+        "label": "Панические состояния"
+      }
+    }
+  ]
+}

@@ -33,6 +33,8 @@ export default function About() {
           <p key={i}>{text}</p>
         ))}
       </div>
+
+      <div data-container className={styles.content}></div>
     </div>
   );
 }
