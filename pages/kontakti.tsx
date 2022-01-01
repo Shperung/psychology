@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 // components
 import T, { useTrans } from '../trans/trans';
+import ContactsBlock from '../components/contacts/contacts';
 
 export default function Contacts() {
   const { t } = useTrans();
@@ -16,7 +17,7 @@ export default function Contacts() {
       <h1 data-heading>
         <T>Котнакти</T>
       </h1>
-      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Сторінка на стадії розробки</h3>
+      <ContactsBlock />
     </div>
   );
 }

@@ -19,11 +19,25 @@ export default function PricesBlock(props) {
         <article className={styles.article}>
           <div className={styles.article_inner}>
             <h3 className={styles.h3}>
-              <T>Консультація</T>
+              <T>Консультація психіатра</T>
             </h3>
             <b className={styles.summ}>900 грн</b>
             <h4 className={styles.h4}>
-              1 <T>прийом</T>
+              1 <T>прийом</T> - 50 <T>хвилин</T>
+            </h4>
+            <a className={stylesBtns.btn}>
+              <T>Зв'язатися</T>
+            </a>
+          </div>
+        </article>
+        <article className={styles.article}>
+          <div className={styles.article_inner}>
+            <h3 className={styles.h3}>
+              <T>Консультація мед. психолога, психотерапевта</T>
+            </h3>
+            <b className={styles.summ}>900 грн</b>
+            <h4 className={styles.h4}>
+              1 <T>прийом</T> - 50 <T>хвилин</T>
             </h4>
             <a className={stylesBtns.btn}>
               <T>Зв'язатися</T>
@@ -37,7 +51,7 @@ export default function PricesBlock(props) {
             </h3>
             <b className={styles.summ}>1000 грн</b>
             <h4 className={styles.h4}>
-              1 <T>прийом</T>
+              1 <T>прийом</T> - 50 <T>хвилин</T>
             </h4>
             <a className={stylesBtns.btn}>
               <T>Зв'язатися</T>
@@ -47,11 +61,25 @@ export default function PricesBlock(props) {
         <article className={styles.article}>
           <div className={styles.article_inner}>
             <h3 className={styles.h3}>
-              <T>Cесія гіпнозу</T>
+              <T>Cесія регресивного гіпнозу</T>
             </h3>
             <b className={styles.summ}>4000 грн</b>
             <h4 className={styles.h4}>
-              1 <T>сесія</T>
+              1 <T>сесія</T> - 2 <T>години</T>
+            </h4>
+            <a className={stylesBtns.btn}>
+              <T>Зв'язатися</T>
+            </a>
+          </div>
+        </article>
+        <article className={styles.article}>
+          <div className={styles.article_inner}>
+            <h3 className={styles.h3}>
+              <T>Термінова консультація</T>
+            </h3>
+            <b className={styles.summ}>1800 грн</b>
+            <h4 className={styles.h4}>
+              1 <T>прийом</T>
             </h4>
             <a className={stylesBtns.btn}>
               <T>Зв'язатися</T>

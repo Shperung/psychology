@@ -11,9 +11,7 @@ import stylesBtns from '../button/button.module.scss';
 
 export default function Banner() {
   const options = { delay: 5000 }; // Options
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    /*Autoplay(options)*/
-  ]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay(options)]);
 
   return (
     <>

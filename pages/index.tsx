@@ -6,6 +6,7 @@ import T, { useTrans } from '../trans/trans';
 import Banner from '../components/banner/banner';
 import AboutBlock from '../components/about/about';
 import PricesBlock from '../components/prices/prices';
+import ContactsBlock from '../components/contacts/contacts';
 
 export default function Home() {
   const router = useRouter();
@@ -22,6 +23,10 @@ export default function Home() {
         <T>Ціни</T>
       </h1>
       <PricesBlock />
+      <h1 data-heading>
+        <T>Котнакти</T>
+      </h1>
+      <ContactsBlock />
     </>
   );
 }
