@@ -10,7 +10,7 @@ export default function Contacts() {
     <div>
       <Head>
         <title>
-          {t('Редько Тетяна Георгіївна')} | {t('Котнакти')}
+          {t('Котнакти')} | {t('Редько Тетяна Георгіївна')}
         </title>
       </Head>
       <h1 data-heading>

@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import T, { useTrans } from '../trans/trans';
 import Banner from '../components/banner/banner';
 import AboutBlock from '../components/about/about';
+import PricesBlock from '../components/prices/prices';
 
 export default function Home() {
   const router = useRouter();
@@ -17,6 +18,10 @@ export default function Home() {
       </Head>
       <Banner />
       <AboutBlock inMain />
+      <h1 data-heading>
+        <T>Ціни</T>
+      </h1>
+      <PricesBlock />
     </>
   );
 }

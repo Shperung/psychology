@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 // components
 import T, { useTrans } from '../trans/trans';
+import PricesBlock from '../components/prices/prices';
 
 export default function Prise() {
   const { t } = useTrans();
@@ -16,7 +17,7 @@ export default function Prise() {
       <h1 data-heading>
         <T>Ціни</T>
       </h1>
-      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Сторінка на стадії розробки</h3>
+      <PricesBlock />
     </div>
   );
 }
