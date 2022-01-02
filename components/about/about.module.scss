@@ -2,41 +2,6 @@
   display: flex;
 }
 
-.figure {
-  flex-shrink: 0;
-  padding: 100px;
-  position: relative;
-  padding-left: 0;
-  padding-bottom: 48px;
-
-  img {
-    position: relative;
-    z-index: 1;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px 0 rgb(2 48 37 / 20%);
-  }
-
-  &:before,
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 46px;
-    top: 46px;
-    z-index: 1;
-    width: 170px;
-    height: 150px;
-    background: url(/pattern.svg) no-repeat;
-  }
-
-  &:after {
-    left: -56px;
-    bottom: -8px;
-    top: auto;
-    right: auto;
-  }
-}
-
 .figcaption {
   width: 100%;
   padding-left: 64px;

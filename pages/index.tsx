@@ -7,6 +7,7 @@ import Banner from '../components/banner/banner';
 import AboutBlock from '../components/about/about';
 import PricesBlock from '../components/prices/prices';
 import ContactsBlock from '../components/contacts/contacts';
+import ServicesListBlock from '../components/services/services-list';
 
 export default function Home() {
   const router = useRouter();
@@ -23,6 +24,7 @@ export default function Home() {
         <T>Ціни</T>
       </h1>
       <PricesBlock />
+      <ServicesListBlock />
       <h1 data-heading>
         <T>Котнакти</T>
       </h1>
