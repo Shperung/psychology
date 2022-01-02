@@ -20,14 +20,14 @@ export default function Home() {
       </Head>
       <Banner />
       <AboutBlock inMain />
-      <h1 data-heading>
+      <h2 data-heading>
         <T>Ціни</T>
-      </h1>
+      </h2>
       <PricesBlock />
       <ServicesListBlock />
-      <h1 data-heading>
+      <h2 data-heading>
         <T>Котнакти</T>
-      </h1>
+      </h2>
       <ContactsBlock />
     </>
   );

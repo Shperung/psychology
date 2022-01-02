@@ -2,21 +2,19 @@ import Head from 'next/head';
 
 // components
 import T, { useTrans } from '../trans/trans';
+import ReviewsBlock from '../components/reviews/reviews';
 
 export default function Reviews() {
   const { t } = useTrans();
 
   return (
-    <div>
+    <>
       <Head>
         <title>
-          {t('Редько Тетяна Георгіївна')} | {t('Відгуки')}
+          {t('Відгуки')} | {t('Редько Тетяна Георгіївна')}
         </title>
       </Head>
-      <h1 data-heading>
-        <T>Відгуки</T>
-      </h1>
-      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Сторінка на стадії розробки</h3>
-    </div>
+      <ReviewsBlock />
+    </>
   );
 }

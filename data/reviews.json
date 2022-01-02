@@ -1,0 +1,22 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "name": "user 1",
+      "date": "12.04.2021",
+      "text": "By the time I met Dr. Tom, I was in the grips of my addiction, and believed there was no other way for me to live. I had lost all sense of direction, and Dr. Tom helped me uncover many layers of my emotional pain to help me get a new perspective on my life."
+    },
+    {
+      "id": 2,
+      "name": "user 2",
+      "date": "6.08.2021",
+      "text": "By the time I met Dr. Tom, I was in the grips of my addiction, and believed there was no other way for me to live. I had lost all sense of direction, and Dr. Tom helped me uncover many layers of my emotional pain to help me get a new perspective on my life."
+    },
+    {
+      "id": 3,
+      "name": "user 3",
+      "date": "5.10.2021",
+      "text": "By the time I met Dr. Tom, I was in the grips of my addiction, and believed there was no other way for me to live. I had lost all sense of direction, and Dr. Tom helped me uncover many layers of my emotional pain to help me get a new perspective on my life."
+    }
+  ]
+}
