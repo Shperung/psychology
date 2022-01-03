@@ -4,12 +4,13 @@
   --color-white: #fefff9;
   --color-dark: #363636;
   --color-light: #aaaaad;
+  --color-light-grey: #f4f4f4;
   --color-success: #008478;
   --color-success-dark: #01645b;
   --color-soft: #fff1f1;
   --color-lime: #fff9eb;
   --color-border: #ddd;
-  --color-dawn: #ffccbb;
+  --color-dawn: #179fdd;
   --color-orange: #efb200;
   --color-white05: #fdfff5;
   --width-container: 1360px;
@@ -71,6 +72,15 @@ ul {
   margin: 0;
   padding-left: 0;
   list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  appearance: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 [data-container] {

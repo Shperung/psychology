@@ -19,22 +19,25 @@ export default function ReviewsBlock() {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <section>
-      <h2 data-heading>
-        <T>Відгуки</T>
-      </h2>
-      <div className={styles.embla} ref={emblaRef}>
-        <div className={styles.embla__container}>
-          {data.reviews.map(item => (
-            <article key={item.id} className={`${styles.embla__slide}`}>
-              <p>{item.text}</p> <b>{item.name}</b> <time dateTime={item.date}>{item.date}</time>
-            </article>
-          ))}
+    <section data-container className={styles.section}>
+      <div className={styles.container}>
+        <h2 data-heading>
+          <T>Відгуки</T>
+          <i />
+        </h2>
+        <div className={styles.embla} ref={emblaRef}>
+          <div className={styles.embla__container}>
+            {data.reviews.map(item => (
+              <blockquote key={item.id} className={`${styles.embla__slide}`}>
+                <p>{item.text}</p> <b>{item.name}</b> <time dateTime={item.date}>{item.date}</time>
+              </blockquote>
+            ))}
+          </div>
         </div>
-        <button onClick={scrollPrev}>
+        <button className={styles.prev_btn} onClick={scrollPrev}>
           <img src="/icons/arrow-right.svg" width="32px" height="32px" />
         </button>
-        <button onClick={scrollNext}>
+        <button className={styles.next_btn} onClick={scrollNext}>
           <img src="/icons/arrow-right.svg" width="32px" height="32px" />
         </button>
       </div>

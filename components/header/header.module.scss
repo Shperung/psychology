@@ -38,7 +38,7 @@
 }
 
 .active {
-  color: var(--color-success);
+  color: var(--color-dawn);
 }
 
 .logo_hover {
@@ -118,7 +118,7 @@
       content: '';
       width: 0;
       height: 3px;
-      background-color: var(--color-success);
+      background-color: var(--color-dawn);
       position: absolute;
       left: 50%;
       bottom: 4px;
