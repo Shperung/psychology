@@ -25,9 +25,11 @@ export default function PricesBlock(props) {
             <h4 className={styles.h4}>
               1 <T>прийом</T> - 50 <T>хвилин</T>
             </h4>
-            <a className={stylesBtns.btn}>
-              <T>Зв'язатися</T>
-            </a>
+            <Link href="/kontakti">
+              <a className={stylesBtns.btn}>
+                <T>Зв'язатися</T>
+              </a>
+            </Link>
           </div>
         </article>
         <article className={styles.article}>
@@ -39,9 +41,11 @@ export default function PricesBlock(props) {
             <h4 className={styles.h4}>
               1 <T>прийом</T> - 50 <T>хвилин</T>
             </h4>
-            <a className={stylesBtns.btn}>
-              <T>Зв'язатися</T>
-            </a>
+            <Link href="/kontakti">
+              <a className={stylesBtns.btn}>
+                <T>Зв'язатися</T>
+              </a>
+            </Link>
           </div>
         </article>
         <article className={styles.article}>
@@ -53,9 +57,11 @@ export default function PricesBlock(props) {
             <h4 className={styles.h4}>
               1 <T>прийом</T> - 50 <T>хвилин</T>
             </h4>
-            <a className={stylesBtns.btn}>
-              <T>Зв'язатися</T>
-            </a>
+            <Link href="/kontakti">
+              <a className={stylesBtns.btn}>
+                <T>Зв'язатися</T>
+              </a>
+            </Link>
           </div>
         </article>
         <article className={styles.article}>
@@ -67,9 +73,11 @@ export default function PricesBlock(props) {
             <h4 className={styles.h4}>
               1 <T>сесія</T> - 2 <T>години</T>
             </h4>
-            <a className={stylesBtns.btn}>
-              <T>Зв'язатися</T>
-            </a>
+            <Link href="/kontakti">
+              <a className={stylesBtns.btn}>
+                <T>Зв'язатися</T>
+              </a>
+            </Link>
           </div>
         </article>
         <article className={styles.article}>
@@ -81,9 +89,11 @@ export default function PricesBlock(props) {
             <h4 className={styles.h4}>
               1 <T>прийом</T>
             </h4>
-            <a className={stylesBtns.btn}>
-              <T>Зв'язатися</T>
-            </a>
+            <Link href="/kontakti">
+              <a className={stylesBtns.btn}>
+                <T>Зв'язатися</T>
+              </a>
+            </Link>
           </div>
         </article>
       </div>

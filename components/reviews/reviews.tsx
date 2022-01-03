@@ -19,7 +19,7 @@ export default function ReviewsBlock() {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <section data-container className={styles.section}>
+    <section className={styles.section}>
       <div className={styles.container}>
         <h2 data-heading>
           <T>Відгуки</T>

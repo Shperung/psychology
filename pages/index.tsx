@@ -8,6 +8,7 @@ import AboutBlock from '../components/about/about';
 import PricesBlock from '../components/prices/prices';
 import ContactsBlock from '../components/contacts/contacts';
 import ServicesListBlock from '../components/services/services-list';
+import ReviewsBlock from '../components/reviews/reviews';
 
 export default function Home() {
   const router = useRouter();
@@ -25,6 +26,7 @@ export default function Home() {
       </h2>
       <PricesBlock />
       <ServicesListBlock />
+      <ReviewsBlock />
       <h2 data-heading>
         <T>Котнакти</T>
       </h2>

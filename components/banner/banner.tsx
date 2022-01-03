@@ -24,7 +24,7 @@ export default function Banner() {
                 <h2>
                   <T>Що приховується за Вашим зовнішнім спокоєм?</T>
                 </h2>
-                <a className={stylesBtns.btn}>
+                <a href="#anchor-form" className={stylesBtns.btn}>
                   <T>Зв'язатися</T>
                 </a>
               </div>
@@ -40,7 +40,7 @@ export default function Banner() {
                     особистої проблми.
                   </T>
                 </h2>
-                <a className={stylesBtns.btn}>
+                <a href="#anchor-form" className={stylesBtns.btn}>
                   <T>Зв'язатися</T>
                 </a>
               </div>
@@ -53,7 +53,7 @@ export default function Banner() {
                 <h2>
                   <T>Зупиніть стрес! Живіть гармонійним життям!</T>
                 </h2>
-                <a className={stylesBtns.btn}>
+                <a href="#anchor-form" className={stylesBtns.btn}>
                   <T>Зв'язатися</T>
                 </a>
               </div>

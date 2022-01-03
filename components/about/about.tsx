@@ -39,9 +39,11 @@ export default function AboutBlock(props) {
               </a>
             </Link>
           ) : null}
-          <a className={`${stylesBtns.btn} ${styles.link}`}>
-            <T>Зв'язатися</T>
-          </a>
+          <Link href="/kontakti">
+            <a className={`${stylesBtns.btn} ${styles.link}`}>
+              <T>Зв'язатися</T>
+            </a>
+          </Link>
         </div>
       </figcaption>
     </section>
