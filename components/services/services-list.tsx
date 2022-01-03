@@ -20,7 +20,7 @@ export default function ServicesListBlock(props) {
       <div className={styles.container}>
         <div className={styles.prof_blocks}>
           <figure data-figure className={styles.prof_figure}>
-            <img loading="lazy" src="/photo/Photo_429в.jpeg" alt="Редько Тетяна Георгіївна" />
+            <img loading="lazy" src="/photo/Photo_429_2x.jpeg" alt="Редько Тетяна Георгіївна" />
           </figure>
           <figcaption className={styles.figcaption}>
             <h1>

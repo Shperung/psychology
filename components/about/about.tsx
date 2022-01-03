@@ -16,7 +16,7 @@ export default function AboutBlock(props) {
     <section data-container className={styles.container}>
       <figure data-figure>
         <img
-          src={inMain ? '/photo/Photo_462в.jpeg' : '/photo/Photo_367в.jpeg'}
+          src={inMain ? '/photo/Photo_462_2x.jpeg' : '/photo/Photo_367_2x.jpeg'}
           alt={t('Редько Тетяна Георгіївна')}
           width="400px"
         />

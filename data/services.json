@@ -2,7 +2,7 @@
   "services": [
     {
       "id": 1,
-      "img": "services/s1s.jpeg",
+      "img": "/services/s1s.jpeg",
       "url": "/",
       "ua": {
         "label": "Депресії"

@@ -15,7 +15,6 @@ export default function About() {
   const { t } = useTrans();
   const { locale } = useRouter();
 
-  console.log('%c --- data', 'color:green', data);
   return (
     <div>
       <Head>
@@ -28,7 +27,7 @@ export default function About() {
         <T>Про мене</T>
       </h2>
       <div data-content data-container className={styles.content}>
-        <img src={'/photo/Photo_102в.jpeg'} alt={t('Редько Тетяна Георгіївна')} width="300px" />
+        <img src={'/photo/Photo_102_2x.jpeg'} alt={t('Редько Тетяна Георгіївна')} width="300px" />
         {data.aboutText[locale].map((text, i) => (
           <p key={i}>{text}</p>
         ))}
