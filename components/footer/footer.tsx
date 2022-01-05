@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
-//helpers
+//contacts
+import SocialBlock from '../contacts/social';
 
 // styles
 import styles from './footer.module.scss';
@@ -17,6 +18,9 @@ export default function Footer() {
         <div data-container className={styles.footer_info}>
           <b>{new Date().getFullYear()}</b>
           <div className={styles.langs}></div>
+        </div>
+        <div className={styles.social}>
+          <SocialBlock />
         </div>
       </footer>
     </>

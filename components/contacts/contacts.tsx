@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 
 // components
 import T, { useTrans } from '../../trans/trans';
+import SocialBlock from './social';
 
 // styles
 import styles from './contacts.module.scss';
@@ -120,6 +121,9 @@ export default function ContactsBlock() {
                   <a href="mailto:t.g.redko@gmail.com">t.g.redko@gmail.com</a>
                 </li>
               </ul>
+              <div className={styles.social}>
+                <SocialBlock />
+              </div>
             </div>
           </div>
 
