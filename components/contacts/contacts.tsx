@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 // components
 import T, { useTrans } from '../../trans/trans';
 import SocialBlock from './social';
+import PhonesBlock from '../contacts/phones';
 
 // styles
 import styles from './contacts.module.scss';
@@ -101,17 +102,9 @@ export default function ContactsBlock() {
               <h4>
                 <T>Телефон</T>:
               </h4>
-              <ul>
-                <li className={styles.hover_li}>
-                  <a href="tel:+380509584113">+38-050-958-41-13</a>
-                </li>
-                <li className={styles.hover_li}>
-                  <a href="tel:+380939167544">+38-093-916-75-44 (viber)</a>
-                </li>
-                <li className={styles.hover_li}>
-                  <a href="tel:+380681627732">+38-068-162-77-32</a>
-                </li>
-              </ul>
+              <div className={styles.phones}>
+                <PhonesBlock />
+              </div>
             </div>
 
             <div className={styles.contact_item}>

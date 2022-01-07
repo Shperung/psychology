@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  padding-bottom: 64px;
 }
 
 .figcaption {
@@ -7,16 +8,17 @@
   padding-left: 64px;
   padding-top: 32px;
   padding-right: 100px;
+  text-align: center;
 
   h1 {
-    font-size: 48px;
+    font-size: 58px;
     font-family: var(--font-header);
     font-weight: 700;
     margin-top: 57px;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   p {

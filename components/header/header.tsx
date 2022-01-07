@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 
 // components
 import T, { useTrans } from '../../trans/trans';
+import PhonesBlock from '../contacts/phones';
 
 // styles
 import styles from './header.module.scss';
@@ -26,11 +27,6 @@ export default function Header() {
       path: '/pro-mene',
     },
     {
-      id: 3,
-      title: t('Послуги'),
-      path: '/poslugi',
-    },
-    {
       id: 4,
       title: t('Контакти'),
       path: '/kontakti',
@@ -44,6 +40,11 @@ export default function Header() {
       id: 6,
       title: t('Відгуки'),
       path: '/vidguki',
+    },
+    {
+      id: 3,
+      title: t('Цікаве'),
+      path: '/tsikave',
     },
   ];
   return (
@@ -71,16 +72,14 @@ export default function Header() {
             })}
           </div>
 
-          <span className={`${styles.info_item} ${styles.info_right}`}>
+          <span className={`${styles.info_item} ${styles.info_right} ${styles.info_phone}`}>
             <img alt="зателефонувати" width="16px" height="16px" src="/icons/call.svg" />
-            <a className={styles.info_item_link} href="tel:+380939167544">
-              +38-093-916-75-44
-            </a>
+            <PhonesBlock />
           </span>
           <span className={styles.info_item}>
             <img alt="локація" width="16px" height="16px" src="/icons/location.svg" />
             <a className={styles.info_item_link} href={MAP_URL}>
-              <T>вул. Хмельницьке Шосе, 23, поверх 2, каб. 115</T>
+              <T>Вінниця</T> <T>Хмельницьке Шосе, 23, поверх 2, каб. 115</T>
             </a>
           </span>
         </div>

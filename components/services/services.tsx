@@ -16,26 +16,19 @@ export default function ServicesBlock(props) {
   const { locale } = useRouter();
 
   return (
-    <>
-      <div data-container>
-        <h2 data-center>
-          <T>В яких випадках я можу Вам допомогти:</T>
-        </h2>
+    <section data-container>
+      <div className={styles.container}>
+        {data.services.map(item => {
+          return (
+            <article key={item.id} className={styles.article}>
+              <figure className={styles.figure}>
+                <img src={item.img} alt={item[locale].label} />
+                <figcaption className={styles.label}>{item[locale].label}</figcaption>
+              </figure>
+            </article>
+          );
+        })}
       </div>
-      <section data-container>
-        <div className={styles.container}>
-          {data.services.map(item => {
-            return (
-              <article key={item.id} className={styles.article}>
-                <figure className={styles.figure}>
-                  <img src={item.img} alt={item[locale].label} />
-                  <figcaption className={styles.label}>{item[locale].label}</figcaption>
-                </figure>
-              </article>
-            );
-          })}
-        </div>
-      </section>
-    </>
+    </section>
   );
 }

@@ -11,11 +11,11 @@ export default function Services() {
     <div>
       <Head>
         <title>
-          {t('Послуги')} | {t('Редько Тетяна Георгіївна')}
+          {t('Цікаве')} | {t('Редько Тетяна Георгіївна')}
         </title>
       </Head>
       <h1 data-heading>
-        <T>Послуги</T>
+        <T>Цікава психологія і психіатрія</T>
       </h1>
       <ServicesBlock />
     </div>

@@ -16,7 +16,7 @@ export default function AboutBlock(props) {
     <section data-container className={styles.container}>
       <figure data-figure>
         <img
-          src={inMain ? '/photo/Photo_462_2x.jpeg' : '/photo/Photo_367_2x.jpeg'}
+          src={inMain ? '/photo/Photo_256_2x.jpeg' : '/photo/Photo_367_2x.jpeg'}
           alt={t('Редько Тетяна Георгіївна')}
           width="400px"
         />
@@ -27,10 +27,10 @@ export default function AboutBlock(props) {
         </h1>
         <h2>
           <T>Лікар-психіатр вищої кваліфікаційної категорії.</T> <T>Кандидат медичних наук.</T>
-        </h2>
-        <p>
+          <br />
           <T>Медичний психолог, психотерапевт, регресивний гіпнолог.</T>
-        </p>
+        </h2>
+
         <div>
           {inMain ? (
             <Link href="/pro-mene">
