@@ -96,6 +96,22 @@ export default function PricesBlock(props) {
             </Link>
           </div>
         </article>
+        <article className={styles.article}>
+          <div className={styles.article_inner}>
+            <h3 className={styles.h3}>
+              <T>Консультація сімейної пари</T>
+            </h3>
+            <b className={styles.summ}>1600 грн</b>
+            <h4 className={styles.h4}>
+              1 <T>прийом</T>
+            </h4>
+            <Link href="/kontakti">
+              <a className={stylesBtns.btn}>
+                <T>Зв'язатися</T>
+              </a>
+            </Link>
+          </div>
+        </article>
       </div>
       <p className={styles.info}>
         <sup>*</sup>
@@ -104,6 +120,9 @@ export default function PricesBlock(props) {
         </b>{' '}
         <T>проходе у</T> Viber, Telegram <T>в форматі відеозвязку</T>.{' '}
         <T>Наявність відео під час проведення консультації - обов'язкова умова.</T>
+      </p>
+      <p className={styles.info}>
+        <T>Підбір медикаментозного лікування входить в вартість консультації</T>
       </p>
     </section>
   );

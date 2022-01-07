@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import T, { useTrans } from '../../trans/trans';
 
 // data
-import data from '../../data/services.json';
+import data from '../../data/interesting.json';
 
 // styles
 import styles from './services.module.scss';
@@ -18,7 +18,7 @@ export default function ServicesBlock(props) {
   return (
     <section data-container>
       <div className={styles.container}>
-        {data.services.map(item => {
+        {data.interesting.map(item => {
           return (
             <article key={item.id} className={styles.article}>
               <figure className={styles.figure}>
