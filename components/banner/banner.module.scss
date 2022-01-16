@@ -117,6 +117,28 @@
   // background-position: top right;
 }
 
+.slide_4 {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #00000017;
+  }
+}
+
+.slide_inner_4 {
+  h2 {
+    position: relative;
+    color: white;
+    text-shadow: 0px 2px 4px #22222242;
+  }
+}
+
 .slide_container {
   display: flex;
   align-items: center;

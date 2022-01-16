@@ -51,7 +51,20 @@ export default function Banner() {
             <div data-container className={styles.slide_container}>
               <div className={`${styles.slide_inner} ${styles.slide_inner_3}`}>
                 <h2>
-                  <T>Зупиніть стрес! Живіть гармонійним життям!</T>
+                  <T>Зупиніть стрес!</T>
+                </h2>
+                <a href="#anchor-form" className={stylesBtns.btn}>
+                  <T>Зв'язатися</T>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article className={`${styles.embla__slide} ${styles.slide_4}`}>
+            <img src="/slides/slide-4.jpeg" alt="слайд 3" />
+            <div data-container className={styles.slide_container}>
+              <div className={`${styles.slide_inner} ${styles.slide_inner_4}`}>
+                <h2>
+                  <T>Живіть гармонійним життям!</T>
                 </h2>
                 <a href="#anchor-form" className={stylesBtns.btn}>
                   <T>Зв'язатися</T>
