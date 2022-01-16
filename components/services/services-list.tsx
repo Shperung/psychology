@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import T, { useTrans } from '../../trans/trans';
 
 // data
-import data from '../../data/interesting.json';
+import data from '../../data/services.json';
 
 // styles
 import styles from './services.module.scss';
@@ -24,11 +24,16 @@ export default function ServicesListBlock(props) {
           </figure>
           <figcaption className={styles.figcaption}>
             <h1>
-              <T>В яких випадках я можу Вам допомогти:</T>
+              <T>Займаюся лікуванням</T>:
             </h1>
+            <ul className={`${styles.prof_ul} ${styles.double}`}>
+              {data.services.map(item => {
+                return <li key={item.id}>{item[locale]}</li>;
+              })}
+            </ul>
             <ul className={styles.prof_ul}>
-              {data.interesting.map(item => {
-                return <li key={item.id}>{item[locale].label}</li>;
+              {data.servicesLong.map(item => {
+                return <li key={item.id}>{item[locale]}</li>;
               })}
             </ul>
           </figcaption>

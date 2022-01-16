@@ -90,7 +90,11 @@
 
   padding-left: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+
+  &.double {
+    grid-template-columns: 1fr 1fr;
+  }
 
   @media (max-width: $tablat) {
     top: 32px;

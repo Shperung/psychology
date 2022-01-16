@@ -7,7 +7,7 @@
   --color-light-grey: #f4f4f4;
   --color-success: #008478;
   --color-success-dark: #01645b;
-  --color-soft: #fff1f1;
+  --color-soft: #fff8e6;
   --color-lime: #fff9eb;
   --color-border: #ddd;
   --color-dawn: #179fdd;
@@ -50,7 +50,7 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   //background: linear-gradient(-45deg, var(--color-lime), var(--color-white));
-  background: var(--color-white);
+  background: var(--color-soft);
   // background-size: 400% 400%;
   // animation: gradient 15s ease infinite;
   color: var(--color-dark);
@@ -151,7 +151,7 @@ button {
     transform: translate(-50%);
     background-color: var(--color-dawn);
     position: absolute;
-    border: 12px solid var(--color-white);
+    border: 12px solid var(--color-soft);
   }
 }
 
