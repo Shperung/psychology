@@ -16,29 +16,63 @@ export default function ServicesListBlock(props) {
   const { locale } = useRouter();
 
   return (
-    <section data-container>
-      <div className={styles.container}>
-        <div className={styles.prof_blocks}>
-          <figure data-figure className={styles.prof_figure}>
-            <img loading="lazy" src="/photo/Photo_429_2x.jpeg" alt="Редько Тетяна Георгіївна" />
-          </figure>
-          <figcaption className={styles.figcaption}>
-            <h1>
-              <T>Займаюся лікуванням</T>:
-            </h1>
-            <ul className={`${styles.prof_ul} ${styles.double}`}>
-              {data.services.map(item => {
-                return <li key={item.id}>{item[locale]}</li>;
-              })}
-            </ul>
-            <ul className={styles.prof_ul}>
-              {data.servicesLong.map(item => {
-                return <li key={item.id}>{item[locale]}</li>;
-              })}
-            </ul>
-          </figcaption>
+    <>
+      <section data-container>
+        <div className={styles.container}>
+          <div className={styles.prof_blocks}>
+            <figure data-figure className={styles.prof_figure}>
+              <img loading="lazy" src="/photo/Photo_429_2x.jpeg" alt="Редько Тетяна Георгіївна" />
+            </figure>
+            <figcaption className={styles.figcaption}>
+              <h1>
+                <T>Займаюся лікуванням</T>:
+              </h1>
+              <ul className={`${styles.prof_ul} ${styles.double}`}>
+                {data.services.map(item => {
+                  return <li key={item.id}>{item[locale]}</li>;
+                })}
+              </ul>
+              <ul className={styles.prof_ul}>
+                {data.servicesLong.map(item => {
+                  return <li key={item.id}>{item[locale]}</li>;
+                })}
+              </ul>
+            </figcaption>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section data-container>
+        <div className={styles.container}>
+          <div className={styles.prof_blocks}>
+            <figure data-figure className={styles.prof_figure}>
+              <img loading="lazy" src="/photo/Photo_277.jpeg" alt="Редько Тетяна Георгіївна" />
+            </figure>
+            <figcaption className={styles.figcaption}>
+              <h1>
+                <T>Займаюся гіпнотерапією</T>.
+              </h1>
+              <h2>
+                <T>Проводжу опрацювання у регресивному гіпнозі пацієнтів</T>:
+              </h2>
+              <ul className={`${styles.prof_ul} ${styles.double}`}>
+                {data.gipno.map(item => {
+                  return <li key={item.id}>{item[locale]}</li>;
+                })}
+              </ul>
+              <ul className={styles.prof_ul}>
+                {data.gipnoLong.map(item => {
+                  return <li key={item.id}>{item[locale]}</li>;
+                })}
+              </ul>
+            </figcaption>
+          </div>
+        </div>
+      </section>
+      <ul className={`${styles.prof_ul} ${styles.info}`}>
+        {data.info.map(item => {
+          return <li key={item.id}>{item[locale]}</li>;
+        })}
+      </ul>
+    </>
   );
 }
