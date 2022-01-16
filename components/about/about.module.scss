@@ -39,3 +39,22 @@
     margin-left: 32px;
   }
 }
+
+.license {
+  display: flex;
+  align-items: center;
+
+  figcaption {
+    padding-left: 32px;
+    font-size: 32px;
+  }
+}
+
+.info {
+  margin-top: -32px;
+  padding-bottom: 32px;
+
+  p {
+    font-size: 18px;
+  }
+}
