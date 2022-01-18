@@ -19,11 +19,11 @@ export default function Reviews() {
        <h1 data-heading>
           <T>Відео відгук</T>         
        </h1>
-       <center style={{paddingBottom: '64px', marginTop: '-16px'}}>         
+       <div style={{paddingBottom: '64px', marginTop: '-16px', display: 'flex', justifyContent: 'center'}}>         
        <video width="750" height="500" controls >
         <source src="/video/review1.mp4" type="video/mp4"/>
        </video>
-       </center>
+       </div>
     </>
   );
 }
