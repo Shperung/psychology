@@ -19,6 +19,7 @@ export default function ReviewsBlock() {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
+    <>
     <section className={styles.section}>
       <div className={styles.container}>
         <h2 data-heading>
@@ -42,5 +43,14 @@ export default function ReviewsBlock() {
         </button>
       </div>
     </section>
+     <h1 data-heading>
+          <T>Відео відгук</T>         
+       </h1>
+       <div style={{paddingBottom: '64px', marginTop: '-16px', display: 'flex', justifyContent: 'center'}}>         
+       <video width="750" height="500" controls >
+        <source src="/video/review1.mp4" type="video/mp4"/>
+       </video>
+       </div>
+       </>
   );
 }

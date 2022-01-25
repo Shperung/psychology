@@ -14,7 +14,7 @@ export default function Banner() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay(options)]);
 
   return (
-    <>
+
       <section className={styles.embla} ref={emblaRef}>
         <div className={styles.embla__container}>
           <article className={`${styles.embla__slide} ${styles.slide_1}`}>
@@ -74,6 +74,6 @@ export default function Banner() {
           </article>
         </div>
       </section>
-    </>
+    
   );
 }

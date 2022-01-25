@@ -21,7 +21,7 @@ export default function PricesBlock(props) {
             <h3 className={styles.h3}>
               <T>Консультація психіатра</T>
             </h3>
-            <b className={styles.summ}>900 грн</b>
+            <b className={styles.summ}>1000 грн</b>
             <h4 className={styles.h4}>
               1 <T>прийом</T> - 50 <T>хвилин</T>
             </h4>
@@ -37,7 +37,7 @@ export default function PricesBlock(props) {
             <h3 className={styles.h3}>
               <T>Консультація мед. психолога, психотерапевта</T>
             </h3>
-            <b className={styles.summ}>900 грн</b>
+            <b className={styles.summ}>1000 грн</b>
             <h4 className={styles.h4}>
               1 <T>прийом</T> - 50 <T>хвилин</T>
             </h4>

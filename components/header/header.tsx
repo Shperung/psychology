@@ -89,7 +89,7 @@ export default function Header() {
           <Link href="/">
             <a className={styles.logo}>
               <picture>
-                <source srcSet="/logo-main.png, /logo-main-2x.png 2x" />
+                <source srcSet="/logo-gray.png, /logo-gray-2x.png 2x" />
                 <img
                   alt={t('Редько Тетяна Георгіївна')}
                   title={t('Редько Тетяна Георгіївна')}

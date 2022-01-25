@@ -163,6 +163,11 @@
 }
 
 .info {
-  padding-left: 64px;
   padding-bottom: 32px;
+
+  p {
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 8px;
+  }
 }
