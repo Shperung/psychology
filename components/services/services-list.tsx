@@ -68,11 +68,11 @@ export default function ServicesListBlock(props) {
           </div>
         </div>
       </section>
-      <div data-container className={`${styles.info}`}>
+      <ul data-container className={`${styles.info}`}>
         {data.info.map(item => {
-          return <p key={item.id}>{item[locale]}</p>;
+          return <li key={item.id}>{item[locale]}</li>;
         })}
-      </div>
+      </ul>
     </>
   );
 }

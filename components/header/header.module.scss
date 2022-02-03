@@ -10,8 +10,8 @@
 [data-container].info {
   display: flex;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: 14px;
 }
 
@@ -76,9 +76,10 @@
   text-decoration: none;
   font-weight: 600;
   color: var(--color-success);
+  border-bottom: 1px solid transparent;
 
   &:hover {
-    border-bottom: 1px solid;
+    border-color: var(--color-success);
   }
 }
 
@@ -136,5 +137,15 @@
         width: 100%;
       }
     }
+  }
+}
+
+.social {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+
+  a {
+    margin-left: 16px;
   }
 }

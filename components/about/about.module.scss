@@ -34,6 +34,10 @@
 .content {
   padding-bottom: 64px;
 
+  p {
+    text-indent: 12px;
+  }
+
   img {
     float: right;
     margin-left: 32px;
@@ -46,7 +50,7 @@
 
   figcaption {
     padding-left: 32px;
-    font-size: 32px;
+    font-size: 38px;
   }
 }
 
@@ -55,7 +59,9 @@
   padding-bottom: 32px;
 
   p {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 600;
+    margin-bottom: 16px;
+    text-indent: 32px;
   }
 }

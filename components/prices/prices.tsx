@@ -118,7 +118,8 @@ export default function PricesBlock(props) {
         <b>
           Online - <T>Консультація</T>
         </b>{' '}
-        <T>проходе у</T> Viber, Telegram <T>в форматі відеозвязку</T>.{' '}
+        <T>проходе у</T> Viber, Telegram <T>в форматі відеозвязку</T>.
+        <br />
         <T>Наявність відео під час проведення консультації - обов'язкова умова.</T>
       </p>
       <p className={styles.info}>

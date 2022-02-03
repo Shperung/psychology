@@ -16,6 +16,14 @@ class MainDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap"
             rel="stylesheet"
           />
+          <meta
+            name="keywords"
+            content="Психолог Винница, Психолог Вінниця, Психолог Киев, Психолог Київ, Редько Тетяна Георгіївна, Редько Татьяна Георгиевна"
+          />
+          <meta
+            name="description"
+            content="Лікар-психіатр вищої кваліфікаційної категорії. Кандидат медичних наук. Медичний психолог. Психотерапевт. Регресивний гіпнолог. Редько Тетяна Георгіївна"
+          />
           <script
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

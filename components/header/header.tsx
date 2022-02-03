@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 // components
 import T, { useTrans } from '../../trans/trans';
 import PhonesBlock from '../contacts/phones';
+import SocialBlock from '../contacts/social';
 
 // styles
 import styles from './header.module.scss';
@@ -76,12 +77,20 @@ export default function Header() {
             <img alt="зателефонувати" width="16px" height="16px" src="/icons/call.svg" />
             <PhonesBlock />
           </span>
-          <span className={styles.info_item}>
-            <img alt="локація" width="16px" height="16px" src="/icons/location.svg" />
-            <a className={styles.info_item_link} href={MAP_URL}>
-              <T>Вінниця</T> <T>Хмельницьке Шосе, 23, поверх 2, каб. 115</T>
-            </a>
-          </span>
+          <div>
+            <span className={styles.info_item}>
+              <img alt="локація" width="16px" height="16px" src="/icons/location.svg" />
+              <a className={styles.info_item_link} href={MAP_URL}>
+                <T>Вінниця</T>, <T>Хмельницьке Шосе, 23, поверх 2, каб. 115</T>
+              </a>
+            </span>
+            <span className={styles.info_item}>
+              <img alt="локація" width="16px" height="16px" src="/icons/location.svg" />
+              <span className={styles.info_item_link}>
+                <T>Київ</T>, <T>метро Васильківська</T>
+              </span>
+            </span>
+          </div>
         </div>
       </header>
       <nav className={styles.nav}>
@@ -122,6 +131,9 @@ export default function Header() {
               );
             })}
           </menu>
+          <div className={styles.social}>
+            <SocialBlock />
+          </div>
         </div>
       </nav>
     </>
