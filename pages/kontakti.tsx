@@ -11,11 +11,11 @@ export default function Contacts() {
     <div>
       <Head>
         <title>
-          {t('Котнакти')} | {t('Редько Тетяна Георгіївна')}
+          {t('Контакти')} | {t('Редько Тетяна Георгіївна')}
         </title>
       </Head>
       <h1 data-heading>
-        <T>Котнакти</T>
+        <T>Контакти</T>
       </h1>
       <ContactsBlock />
     </div>
