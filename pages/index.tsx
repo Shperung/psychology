@@ -9,6 +9,7 @@ import PricesBlock from '../components/prices/prices';
 import ContactsBlock from '../components/contacts/contacts';
 import ServicesListBlock from '../components/services/services-list';
 import ReviewsBlock from '../components/reviews/reviews';
+import Free from '../components/free/free';
 
 export default function Home() {
   const router = useRouter();
@@ -20,6 +21,7 @@ export default function Home() {
         <title>{t('Редько Тетяна Георгіївна')}</title>
       </Head>
       <AboutBlock inMain />
+      <Free />
       <Banner />
       <h2 data-heading>
         <T>Ціни</T>

@@ -1,0 +1,43 @@
+.free {
+  display: flex;
+}
+
+.free_info {
+  padding-top: 58px;
+
+  h2 {
+    font-size: 38px;
+    color: var(--color-success);
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  small {
+    font-size: 18px;
+  }
+
+  ul {
+    li {
+      display: flex;
+      font-size: 16px;
+      margin-bottom: 4px;
+
+      &::before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: var(--color-dawn);
+        margin-right: 16px;
+        margin-top: 4px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
