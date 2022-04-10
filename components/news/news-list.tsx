@@ -25,7 +25,7 @@ export default function NewsListBlock(props: Props) {
           {news.map(item => {
             return (
               <article key={item.unique} className={styles.article}>
-                <Link href={`/novini/${item.unique}`}>
+                <Link href={`/novini/[unique]`} as={`/novini/${item.unique}`}>
                   <a className={styles.figure}>
                     <img src={item.img_s} alt={item.h1} />
                     <figcaption className={styles.label}>{item.h1}</figcaption>

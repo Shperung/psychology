@@ -1,0 +1,21 @@
+.post_figure {
+   padding-bottom: 64px;
+   padding-top: 32px; 
+}
+
+.post_img {
+  float: left;
+  max-width: 600px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+.post_content {
+  font-size: 18px;
+  line-height: 1.45;
+
+  p {
+    margin-bottom: 16px;
+    text-indent: 14px;
+  }
+}

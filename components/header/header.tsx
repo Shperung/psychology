@@ -48,7 +48,7 @@ export default function Header() {
       path: '/tsikave',
     },
     {
-      id: 4,
+      id: 7,
       title: t('Новини'),
       path: '/novini',
     },
