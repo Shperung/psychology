@@ -47,6 +47,11 @@ export default function Header() {
       title: t('Цікаве'),
       path: '/tsikave',
     },
+    {
+      id: 4,
+      title: t('Новини'),
+      path: '/novini',
+    },
   ];
   return (
     <>
