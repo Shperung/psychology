@@ -128,7 +128,8 @@ button {
   font-family: var(--font-header);
   font-weight: 700;
   margin-top: 24px;
-  margin-bottom: 48px;
+  margin-bottom: 64px;
+  padding-bottom: 32px;
 
   &::before {
     width: 300px;
