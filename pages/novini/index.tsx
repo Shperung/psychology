@@ -26,7 +26,7 @@ type Props = {
   news: NewsListType;
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const db = getFirestore();
 
   // новини
@@ -51,6 +51,7 @@ export async function getStaticProps() {
 export default function News(props: Props) {
   const { news } = props;
   const { t } = useTrans();
+  console.log('%c ||||| news', 'color:yellowgreen', news);
   return (
     <div>
       <Head>

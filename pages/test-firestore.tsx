@@ -20,44 +20,44 @@ export async function getStaticProps() {
     console.log("No such document!");
   }
 
-  console.log('%c ||||| news1', 'color:yellowgreen', news1);
+  // новини
+  let news = [];
 
-  // заголовки 
-  let headers = []
-  const querySnapshot = await getDocs(collection(db, "news"));
-  querySnapshot.forEach((doc) => {
-    // doc.data() is never undefined for query doc snapshots
-    console.log(doc.id, " => ", doc.data().h1);
-    headers.push(doc.data().h1)
+  const querySnapshot = await getDocs(collection(db, 'news'));
+  // console.log('%c ||||| querySnapshot', 'color:yellowgreen', querySnapshot);
+  querySnapshot.forEach(doc => {
+    console.log('%c ||||| doc.data()', 'color:yellowgreen', doc.data());
+    news.push({
+      unique: doc.data().unique || '',
+      h1: doc.data().h1 || '',
+      img_s: doc.data().img_s || '',
+    });
   });
-
-//   console.log('%c ||||| headers', 'color:yellowgreen', headers);
 
   return {
     props: {
       news1,
-      headers
+      news
     },
   }
 }
-export default function Contacts({news1, headers}) {
+export default function Contacts({news1, news}) {
   const { t } = useTrans();
  
   return (
     <div style={{padding: 16}}>
-      <Head>
+      {/* <Head>
       <meta name="description" content={news1.descr} />
       <meta name="keywords" content={news1.keywords} />
-      </Head>
-     <b>одна стаття</b> - { JSON.stringify(news1)}
+      </Head> */}
+     {/* <b>одна стаття</b> - { JSON.stringify(news1)}
      <div>
          <img src={news1.img} alt="" />
          <h1>{news1.h1}</h1>
          <div dangerouslySetInnerHTML={{ __html: news1.html }} />
-     </div>
-      <hr />
-      <b>заголовки</b> - { JSON.stringify(headers)}
+     </div> */}
 
+     <pre>{ JSON.stringify(news)}</pre> 
      
     </div>
   );
