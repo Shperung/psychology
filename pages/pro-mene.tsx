@@ -1,15 +1,13 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-// components
-import T, { useTrans } from '../trans/trans';
 import AboutBlock from '../components/about/about';
-
-// data
-import data from '../data/about.json';
-
 // style
 import styles from '../components/about/about.module.scss';
+// data
+import data from '../data/about.json';
+// components
+import T, { useTrans } from '../trans/trans';
 
 export default function About() {
   const { t } = useTrans();
@@ -27,12 +25,20 @@ export default function About() {
         <T>Про мене</T>
       </h2>
       <div data-content data-container className={styles.content}>
-        <img src={'/photo/Photo_102_2x.jpeg'} alt={t('Редько Тетяна Георгіївна')} width="300px" />
+        <img
+          src={'/photo/Photo_102_2x.jpeg'}
+          alt={t('Редько Тетяна Георгіївна')}
+          loading="lazy"
+          width="300px"
+        />
         {data.aboutText[locale].map((text, i) => (
           <p key={i}>{text}</p>
         ))}
       </div>
 
+      <figure data-container className={styles.sert}>
+        <img src="/sert.jpeg" alt={t('Редько Тетяна Георгіївна')} loading="lazy" />
+      </figure>
       <div data-container className={styles.content}></div>
     </div>
   );
