@@ -1,6 +1,5 @@
-import {initializeApp} from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-
+import { getAnalytics } from 'firebase/analytics';
+import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -9,14 +8,14 @@ const firebaseConfig = {
   storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
   messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.FIREBASE_APP_ID,
-  measurementId: process.env.FIREBASE_MEASUREMENT_ID
+  measurementId: process.env.FIREBASE_MEASUREMENT_ID,
 };
 
 export default function initFirebase() {
   const app = initializeApp(firebaseConfig);
-  if(typeof window !== 'undefined') {
+  if (typeof window !== 'undefined') {
     const analytics = getAnalytics(app);
   }
-  return app
+  return app;
   console.log('%c ||||| app', 'color:yellowgreen', app);
 }

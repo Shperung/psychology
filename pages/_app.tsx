@@ -1,20 +1,18 @@
 // components
 import Layout from '../components/layout/layout';
-
-// firebase
-import initFirebase from '../firebase/init-firebase'
+// context
+import AuthProvider from '../context/auth.context';
 
 // styles
 import '../components/layout/app.scss';
 
-initFirebase()
-
 function MyApp({ Component, pageProps }) {
-  
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <AuthProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </AuthProvider>
   );
 }
 
