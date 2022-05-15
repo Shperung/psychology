@@ -14,18 +14,18 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 
 import './Login.css';
 
-const logInWithEmailAndPassword = async (email, password) => {
-  try {
-    await signInWithEmailAndPassword(auth, email, password);
-  } catch (err) {
-    alert(err.message);
-  }
-};
+// const logInWithEmailAndPassword = async (email, password) => {
+//   try {
+//     await signInWithEmailAndPassword(auth, email, password);
+//   } catch (err) {
+//     alert(err.message);
+//   }
+// };
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [user, loading, error] = useAuthState(auth);
+  // const [user, loading, error] = useAuthState(auth);
 
   return (
     <div className="login">
@@ -44,9 +44,9 @@ function Login() {
           onChange={e => setPassword(e.target.value)}
           placeholder="Password"
         />
-        <button className="login__btn" onClick={() => logInWithEmailAndPassword(email, password)}>
+        {/* <button className="login__btn" onClick={() => logInWithEmailAndPassword(email, password)}>
           Login
-        </button>
+        </button> */}
       </div>
     </div>
   );
