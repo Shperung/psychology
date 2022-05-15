@@ -24,12 +24,12 @@ const AuthProvider = props => {
   const [user, loading, error] = useAuthState(auth);
   console.log('%c ||||| user', 'color:yellowgreen', user);
 
-  useEffect(() => {
-    setState({
-      ...state,
-      iaAdmin: Boolean(user?.accessToken),
-    });
-  }, [user]);
+  // useEffect(() => {
+  //   setState({
+  //     ...state,
+  //     iaAdmin: Boolean(user?.accessToken),
+  //   });
+  // }, [user]);
 
   return <AuthContext.Provider value={state}>{props.children}</AuthContext.Provider>;
 };
