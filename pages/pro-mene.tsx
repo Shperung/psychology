@@ -37,7 +37,16 @@ export default function About() {
       </div>
 
       <figure data-container className={styles.sert}>
-        <img src="/sert.jpeg" alt={t('Редько Тетяна Георгіївна')} loading="lazy" />
+        <img src="/certificates/sert.jpeg" alt={t('Редько Тетяна Георгіївна')} loading="lazy" />
+      </figure>
+      <figure data-container className={styles.sert}>
+        <img src="/certificates/new_s4.jpg" alt={t('Редько Тетяна Георгіївна')} loading="lazy" />
+      </figure>
+      <figure data-container className={styles.sert}>
+        <img src="/certificates/new_s3.jpeg" alt={t('Редько Тетяна Георгіївна')} loading="lazy" />
+      </figure>
+      <figure data-container className={styles.sert}>
+        <img src="/certificates/new_s2.jpg" alt={t('Редько Тетяна Георгіївна')} loading="lazy" />
       </figure>
       <div data-container className={styles.content}></div>
     </div>
