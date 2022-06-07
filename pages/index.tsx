@@ -21,7 +21,7 @@ export default function Home() {
         <title>{t('Редько Тетяна Георгіївна')}</title>
       </Head>
       <AboutBlock inMain />
-      <Free />
+      {/* <Free /> */}
       <Banner />
       <h2 data-heading>
         <T>Ціни</T>
