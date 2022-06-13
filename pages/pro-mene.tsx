@@ -35,7 +35,6 @@ export default function About() {
           <p key={i}>{text}</p>
         ))}
       </div>
-
       <figure data-container className={styles.sert}>
         <img src="/certificates/sert.jpeg" alt={t('Редько Тетяна Георгіївна')} loading="lazy" />
       </figure>
@@ -47,6 +46,15 @@ export default function About() {
       </figure>
       <figure data-container className={styles.sert}>
         <img src="/certificates/new_s2.jpg" alt={t('Редько Тетяна Георгіївна')} loading="lazy" />
+      </figure>
+      <figure data-container className={styles.sert}>
+        <img src="/certificates/s5.jpeg" alt={t('Редько Тетяна Георгіївна')} loading="lazy" />
+      </figure>
+      <figure data-container className={styles.sert}>
+        <img src="/certificates/s6.jpg" alt={t('Редько Тетяна Георгіївна')} loading="lazy" />
+      </figure>
+      <figure data-container className={styles.sert}>
+        <img src="/certificates/s7.jpg" alt={t('Редько Тетяна Георгіївна')} loading="lazy" />
       </figure>
       <div data-container className={styles.content}></div>
     </div>
