@@ -87,12 +87,6 @@ export default function ContactsBlock() {
               </h4>
               <ul>
                 <li>
-                  <T>Кожен день</T> 16.00-19.00
-                </li>
-                <li>
-                  <T>Субота</T> 10.00-15.00
-                </li>
-                <li>
                   <T>Прийом за попереднім записом.</T>
                 </li>
               </ul>

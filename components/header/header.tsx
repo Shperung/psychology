@@ -59,13 +59,11 @@ export default function Header() {
         <div data-container className={styles.info}>
           <div className={styles.info_item}>
             <img alt="час" width="16px" height="16px" src="/icons/time.svg" />
-            <time>
-              пн-суб 11<sup>00</sup> - 19<sup>00</sup>
-            </time>
+            <time>пн-суб</time>
           </div>
           <div className={`${styles.info_item} ${styles.info_lang}`}>
             <img alt="мова" width="16px" height="16px" src="/icons/world.svg" />
-            {locales.map(localeItem => {
+            {locales?.map(localeItem => {
               return (
                 <Link locale={localeItem} key={localeItem} href={asPath}>
                   <a
