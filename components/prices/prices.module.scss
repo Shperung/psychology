@@ -22,6 +22,7 @@
   font-family: var(--font-header);
   font-weight: 700;
   color: var(--color-success);
+  margin-bottom: auto;
 }
 
 .article_inner {
@@ -35,10 +36,7 @@
   padding-bottom: 32px;
   height: 100%;
   background-color: var(--color-white);
-
-  a {
-    margin-top: auto;
-  }
+ 
 }
 
 .summ {
@@ -62,4 +60,20 @@
   sup {
     color: var(--color-success);
   }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+
+  .h4 {
+    margin-bottom: 0;
+    margin-right: 16px;
+    min-width: 116px;
+    text-align: left;
+  }
+}
+
+.flexWrap {
+  padding: 16px 0;
 }

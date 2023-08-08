@@ -90,7 +90,7 @@ export default function Header() {
             <span className={styles.info_item}>
               <img alt="локація" width="16px" height="16px" src="/icons/location.svg" />
               <span className={styles.info_item_link}>
-                <T>Київ</T>, <T>метро Васильківська</T>
+                <T>Київ</T>, <T>метро Майдан Незалежності, вул. Михайлівська 20б</T>
               </span>
             </span>
           </div>

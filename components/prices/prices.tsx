@@ -21,7 +21,20 @@ export default function PricesBlock(props) {
             <h3 className={styles.h3}>
               <T>Консультація психіатра</T>
             </h3>
-            <b className={styles.summ}>1000 грн</b>
+            <div className={styles.flexWrap}>
+              <div className={styles.flex}>
+                <h4 className={styles.h4}>
+                  <T>Вінниця</T> -
+                </h4>
+                <b className={styles.summ}>1000 грн</b>
+              </div>
+              <div className={styles.flex}>
+                <h4 className={styles.h4}>
+                  <T>Київ</T> -
+                </h4>
+                <b className={styles.summ}>1300 грн</b>
+              </div>
+            </div>
             <h4 className={styles.h4}>
               1 <T>прийом</T> - 50 <T>хвилин</T>
             </h4>
@@ -32,12 +45,26 @@ export default function PricesBlock(props) {
             </Link>
           </div>
         </article>
+
         <article className={styles.article}>
           <div className={styles.article_inner}>
             <h3 className={styles.h3}>
               <T>Консультація мед. психолога, психотерапевта</T>
             </h3>
-            <b className={styles.summ}>1000 грн</b>
+            <div className={styles.flexWrap}>
+              <div className={styles.flex}>
+                <h4 className={styles.h4}>
+                  <T>Вінниця</T> -
+                </h4>
+                <b className={styles.summ}>1000 грн</b>
+              </div>
+              <div className={styles.flex}>
+                <h4 className={styles.h4}>
+                  <T>Київ</T> -
+                </h4>
+                <b className={styles.summ}>1300 грн</b>
+              </div>
+            </div>
             <h4 className={styles.h4}>
               1 <T>прийом</T> - 50 <T>хвилин</T>
             </h4>
@@ -48,12 +75,26 @@ export default function PricesBlock(props) {
             </Link>
           </div>
         </article>
+
         <article className={styles.article}>
           <div className={styles.article_inner}>
             <h3 className={styles.h3}>
               Online - <T>Консультація</T> <sup>*</sup>
             </h3>
-            <b className={styles.summ}>1000 грн</b>
+            <div className={styles.flexWrap}>
+              <div className={styles.flex}>
+                <h4 className={styles.h4}>
+                  <T>Вінниця</T> -
+                </h4>
+                <b className={styles.summ}>1000 грн</b>
+              </div>
+              <div className={styles.flex}>
+                <h4 className={styles.h4}>
+                  <T>Київ</T> -
+                </h4>
+                <b className={styles.summ}>1300 грн</b>
+              </div>
+            </div>
             <h4 className={styles.h4}>
               1 <T>прийом</T> - 50 <T>хвилин</T>
             </h4>
@@ -69,7 +110,9 @@ export default function PricesBlock(props) {
             <h3 className={styles.h3}>
               <T>Cесія регресивного гіпнозу</T>
             </h3>
-            <b className={styles.summ}>4000 грн</b>
+            <div className={styles.flexWrap}>
+              <b className={styles.summ}>4000 грн</b>
+            </div>
             <h4 className={styles.h4}>
               1 <T>сесія</T> - 2 <T>години</T>
             </h4>
@@ -85,7 +128,9 @@ export default function PricesBlock(props) {
             <h3 className={styles.h3}>
               <T>Термінова консультація</T>
             </h3>
-            <b className={styles.summ}>1800 грн</b>
+            <div className={styles.flexWrap}>
+              <b className={styles.summ}>1800 грн</b>
+            </div>
             <h4 className={styles.h4}>
               1 <T>прийом</T>
             </h4>
@@ -101,7 +146,9 @@ export default function PricesBlock(props) {
             <h3 className={styles.h3}>
               <T>Консультація сімейної пари</T>
             </h3>
-            <b className={styles.summ}>1600 грн</b>
+            <div className={styles.flexWrap}>
+              <b className={styles.summ}>1800 грн</b>
+            </div>
             <h4 className={styles.h4}>
               1 <T>прийом</T>
             </h4>
