@@ -165,9 +165,7 @@ export default function PricesBlock(props) {
         <b>
           Online - <T>Консультація</T>
         </b>{' '}
-        <T>проходе у</T> Viber, Telegram <T>в форматі відеозвязку</T>.
-        <br />
-        <T>Наявність відео під час проведення консультації - обов'язкова умова.</T>
+        <T>проходе у</T> Viber, Telegram, WhatsApp.
       </p>
       <p className={styles.info}>
         <T>Підбір медикаментозного лікування входить в вартість консультації</T>
