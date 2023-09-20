@@ -26,7 +26,6 @@ export default function Footer() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d539.4035322895799!2d30.521678076944465!3d50.45398304761681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce45528d4805%3A0xf26e2d297f185d98!2s20B%2C%20Mykhailivs&#39;ka%20St%2C%2020%D0%91%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2sus!4v1695238366397!5m2!1sen!2sus"
             className={styles.google_map}
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </>
       ) : null}
