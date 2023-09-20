@@ -77,7 +77,6 @@ export default function Header() {
           </div>
 
           <span className={`${styles.info_item} ${styles.info_right} ${styles.info_phone}`}>
-            <img alt="зателефонувати" width="16px" height="16px" src="/icons/call.svg" />
             <PhonesBlock />
           </span>
           <div>

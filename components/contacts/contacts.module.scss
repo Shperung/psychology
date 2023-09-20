@@ -179,6 +179,18 @@
 }
 
 .phones {
+  span {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+
+    img {
+      margin-right: 8px;
+      margin-bottom: 2px;
+    }
+  }
+
   a {
     font-size: 16px;
     font-style: normal;

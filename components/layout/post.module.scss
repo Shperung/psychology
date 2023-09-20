@@ -19,3 +19,17 @@
     text-indent: 14px;
   }
 }
+
+.phones {
+  flex-direction: column;
+  display: flex;
+  margin-left: 12px;
+
+  span {
+    margin-bottom: 8px;
+
+    img {
+      margin-right: 8px;
+    }
+  }
+}
