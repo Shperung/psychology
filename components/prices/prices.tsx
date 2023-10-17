@@ -22,6 +22,9 @@ export default function PricesBlock(props) {
               <T>Консультація психіатра</T>
             </h3>
             <div className={styles.flexWrap}>
+              <b className={styles.summ}>1300 грн</b>
+            </div>
+            {/* <div className={styles.flexWrap}>
               <div className={styles.flex}>
                 <h4 className={styles.h4}>
                   <T>Вінниця</T> -
@@ -34,7 +37,7 @@ export default function PricesBlock(props) {
                 </h4>
                 <b className={styles.summ}>1300 грн</b>
               </div>
-            </div>
+            </div> */}
             <h4 className={styles.h4}>
               1 <T>прийом</T> - 50 <T>хвилин</T>
             </h4>
@@ -52,6 +55,9 @@ export default function PricesBlock(props) {
               <T>Консультація мед. психолога, психотерапевта</T>
             </h3>
             <div className={styles.flexWrap}>
+              <b className={styles.summ}>1300 грн</b>
+            </div>
+            {/* <div className={styles.flexWrap}>
               <div className={styles.flex}>
                 <h4 className={styles.h4}>
                   <T>Вінниця</T> -
@@ -64,7 +70,7 @@ export default function PricesBlock(props) {
                 </h4>
                 <b className={styles.summ}>1300 грн</b>
               </div>
-            </div>
+            </div> */}
             <h4 className={styles.h4}>
               1 <T>прийом</T> - 50 <T>хвилин</T>
             </h4>
@@ -82,6 +88,9 @@ export default function PricesBlock(props) {
               Online - <T>Консультація</T> <sup>*</sup>
             </h3>
             <div className={styles.flexWrap}>
+              <b className={styles.summ}>1300 грн</b>
+            </div>
+            {/* <div className={styles.flexWrap}>
               <div className={styles.flex}>
                 <h4 className={styles.h4}>
                   <T>Вінниця</T> -
@@ -94,7 +103,7 @@ export default function PricesBlock(props) {
                 </h4>
                 <b className={styles.summ}>1300 грн</b>
               </div>
-            </div>
+            </div> */}
             <h4 className={styles.h4}>
               1 <T>прийом</T> - 50 <T>хвилин</T>
             </h4>
