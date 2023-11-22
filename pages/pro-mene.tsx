@@ -36,6 +36,12 @@ export default function About() {
         ))}
       </div>
       <figure data-container className={styles.sert}>
+        <img src="/certificates/next2.jpg" alt={t('Редько Тетяна Георгіївна')} loading="lazy" />
+      </figure>
+      <figure data-container className={styles.sert}>
+        <img src="/certificates/next1.jpg" alt={t('Редько Тетяна Георгіївна')} loading="lazy" />
+      </figure>
+      <figure data-container className={styles.sert}>
         <img src="/certificates/sert.jpeg" alt={t('Редько Тетяна Георгіївна')} loading="lazy" />
       </figure>
       <figure data-container className={styles.sert}>
