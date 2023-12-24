@@ -15,6 +15,7 @@ export default function Footer() {
 
   const resetAnal = () => {
     try {
+      //@ts-ignore
       window.dataLayer.push(function () {
         this.reset();
         console.log('reseted');
