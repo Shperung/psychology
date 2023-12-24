@@ -13,6 +13,17 @@ export default function Footer() {
 
   console.log('%c ||||| iaAdmin', 'color:yellowgreen', iaAdmin);
 
+  const resetAnal = () => {
+    try {
+      window.dataLayer.push(function () {
+        this.reset();
+        console.log('reseted');
+      });
+    } catch (error) {
+      console.log('%c ||||| reset error', 'color:red', error);
+    }
+  };
+
   return (
     <>
       {!iaAdmin ? (
@@ -33,6 +44,9 @@ export default function Footer() {
       <footer className={styles.footer}>
         <div data-container className={styles.footer_info}>
           <b>{new Date().getFullYear()}</b>
+          <button style={{ opacity: 0 }} onClick={resetAnal}>
+            RESET
+          </button>
           <div className={styles.langs}></div>
         </div>
         <div className={styles.social}>
