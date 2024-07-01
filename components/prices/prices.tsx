@@ -19,10 +19,10 @@ export default function PricesBlock(props) {
         <article className={styles.article}>
           <div className={styles.article_inner}>
             <h3 className={styles.h3}>
-              <T>Консультація психіатра</T>
+              <T>Консультація психіатра, нарколога</T>
             </h3>
             <div className={styles.flexWrap}>
-              <b className={styles.summ}>1300 грн</b>
+              <b className={styles.summ}>1500 грн</b>
             </div>
             {/* <div className={styles.flexWrap}>
               <div className={styles.flex}>
@@ -35,7 +35,7 @@ export default function PricesBlock(props) {
                 <h4 className={styles.h4}>
                   <T>Київ</T> -
                 </h4>
-                <b className={styles.summ}>1300 грн</b>
+                <b className={styles.summ}>1500 грн</b>
               </div>
             </div> */}
             <h4 className={styles.h4}>
@@ -55,7 +55,7 @@ export default function PricesBlock(props) {
               <T>Консультація мед. психолога, психотерапевта</T>
             </h3>
             <div className={styles.flexWrap}>
-              <b className={styles.summ}>1300 грн</b>
+              <b className={styles.summ}>1500 грн</b>
             </div>
             {/* <div className={styles.flexWrap}>
               <div className={styles.flex}>
@@ -68,7 +68,7 @@ export default function PricesBlock(props) {
                 <h4 className={styles.h4}>
                   <T>Київ</T> -
                 </h4>
-                <b className={styles.summ}>1300 грн</b>
+                <b className={styles.summ}>1500 грн</b>
               </div>
             </div> */}
             <h4 className={styles.h4}>
@@ -88,7 +88,7 @@ export default function PricesBlock(props) {
               Online - <T>Консультація</T> <sup>*</sup>
             </h3>
             <div className={styles.flexWrap}>
-              <b className={styles.summ}>1300 грн</b>
+              <b className={styles.summ}>1500 грн</b>
             </div>
             {/* <div className={styles.flexWrap}>
               <div className={styles.flex}>
@@ -101,7 +101,7 @@ export default function PricesBlock(props) {
                 <h4 className={styles.h4}>
                   <T>Київ</T> -
                 </h4>
-                <b className={styles.summ}>1300 грн</b>
+                <b className={styles.summ}>1500 грн</b>
               </div>
             </div> */}
             <h4 className={styles.h4}>
@@ -120,7 +120,7 @@ export default function PricesBlock(props) {
               <T>Cесія регресивного гіпнозу</T>
             </h3>
             <div className={styles.flexWrap}>
-              <b className={styles.summ}>4000 грн</b>
+              <b className={styles.summ}>5000 грн</b>
             </div>
             <h4 className={styles.h4}>
               1 <T>сесія</T> - 2 <T>години</T>
@@ -138,7 +138,7 @@ export default function PricesBlock(props) {
               <T>Термінова консультація</T>
             </h3>
             <div className={styles.flexWrap}>
-              <b className={styles.summ}>1800 грн</b>
+              <b className={styles.summ}>2500 грн</b>
             </div>
             <h4 className={styles.h4}>
               1 <T>прийом</T>
@@ -156,7 +156,7 @@ export default function PricesBlock(props) {
               <T>Консультація сімейної пари</T>
             </h3>
             <div className={styles.flexWrap}>
-              <b className={styles.summ}>1800 грн</b>
+              <b className={styles.summ}>2500 грн</b>
             </div>
             <h4 className={styles.h4}>
               1 <T>прийом</T>
