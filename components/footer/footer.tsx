@@ -8,18 +8,39 @@ import SocialBlock from '../contacts/social';
 // styles
 import styles from './footer.module.scss';
 
+function sendPurchaseEvent(transaction_id, value, currency, items) {
+  //@ts-ignore
+  window.dataLayer.push({
+    event: 'purchase',
+    ecommerce: {
+      transaction_id: transaction_id,
+      value: value,
+      currency: currency,
+      items: items, // масив з об'єктами товарів
+    },
+  });
+}
+
 export default function Footer() {
   const { iaAdmin } = useContext(AuthContext);
 
   console.log('%c ||||| iaAdmin', 'color:yellowgreen', iaAdmin);
 
-  const resetAnal = () => {
+  const handleAnalitics = () => {
     try {
-      //@ts-ignore
-      window.dataLayer.push(function () {
-        this.reset();
-        console.log('reseted');
-      });
+      sendPurchaseEvent(
+        Date.now(), // ID транзакції
+        1.0, // сума покупки
+        'UAH', // валюта
+        [
+          {
+            item_name: 'Product 1',
+            item_id: 'P12345',
+            price: 50.0,
+            quantity: 1,
+          },
+        ],
+      );
     } catch (error) {
       console.log('%c ||||| reset error', 'color:red', error);
     }
@@ -45,8 +66,8 @@ export default function Footer() {
       <footer className={styles.footer}>
         <div data-container className={styles.footer_info}>
           <b>{new Date().getFullYear()}</b>
-          <button style={{ opacity: 0 }} onClick={resetAnal}>
-            RESET
+          <button style={{ opacity: 0 }} onClick={handleAnalitics}>
+            handleAnalitics
           </button>
           <div className={styles.langs}></div>
         </div>
