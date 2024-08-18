@@ -17,6 +17,7 @@ function sendPurchaseEvent(transaction_id, value, currency, items) {
       value: value,
       currency: currency,
       items: items, // масив з об'єктами товарів
+      version: '4.0.0',
     },
   });
 }
