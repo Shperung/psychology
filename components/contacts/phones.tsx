@@ -13,7 +13,25 @@ export default function PhonesBlock() {
     <>
       <span>
         {phoneIcon}
-        <a href="tel:+380939167544">+38-093-916-75-44 (viber)</a>
+        <a href="tel:+380939167544">+38-093-916-75-44</a>
+      </span>
+      <span>
+        <a href="viber://chat?number=%2B380939167544">
+          <img src="/icons/viber.svg" alt="viber" width="24" height="24" />
+          (viber)
+        </a>
+      </span>
+      <span>
+        <a href="https://t.me/+380939167544">
+          <img src="/icons/telegram.svg" alt="telegram" width="24" height="24" />
+          (telegram)
+        </a>
+      </span>
+      <span>
+        <a href="https://wa.me/+380939167544">
+          <img src="/icons/whatsapp.svg" alt="whatsapp" width="24" height="24" />
+          (whatsapp)
+        </a>
       </span>
       {/* <span>
         {phoneIcon}

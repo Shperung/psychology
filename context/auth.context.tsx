@@ -20,9 +20,9 @@ export const AuthContext = React.createContext<{
 const AuthProvider = props => {
   const [state, setState] = useState(INIT_STATE);
 
-  const auth = getAuth(appFirebase);
-  const [user, loading, error] = useAuthState(auth);
-  console.log('%c ||||| user', 'color:yellowgreen', user);
+  // const auth = getAuth(appFirebase);
+  // const [user, loading, error] = useAuthState(auth);
+  // console.log('%c ||||| user', 'color:yellowgreen', user);
 
   // useEffect(() => {
   //   setState({

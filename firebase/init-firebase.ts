@@ -14,7 +14,7 @@ const firebaseConfig = {
 export default function initFirebase() {
   const app = initializeApp(firebaseConfig);
   if (typeof window !== 'undefined') {
-    const analytics = getAnalytics(app);
+    // const analytics = getAnalytics(app);
   }
   return app;
   console.log('%c ||||| app', 'color:yellowgreen', app);
