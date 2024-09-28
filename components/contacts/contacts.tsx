@@ -104,12 +104,12 @@ export default function ContactsBlock() {
             </div>
 
             <div className={styles.contact_item}>
-              <h4>Email:</h4>
+              {/* <h4>Email:</h4>
               <ul>
                 <li className={styles.hover_li}>
                   <a href="mailto:t.g.redko@gmail.com">t.g.redko@gmail.com</a>
                 </li>
-              </ul>
+              </ul> */}
               <div className={styles.social}>
                 <SocialBlock />
               </div>

@@ -67,9 +67,9 @@ export default function Footer() {
       <footer className={styles.footer}>
         <div data-container className={styles.footer_info}>
           <b>{new Date().getFullYear()}</b>
-          <button style={{ opacity: 0 }} onClick={handleAnalitics}>
+          {/* <button style={{ opacity: 0 }} onClick={handleAnalitics}>
             handleAnalitics
-          </button>
+          </button> */}
           <div className={styles.langs}></div>
         </div>
         <div className={styles.social}>
