@@ -3,8 +3,8 @@ export default function PhonesBlock() {
     <img
       style={{ verticalAlign: 'middle' }}
       alt="зателефонувати"
-      width="16px"
-      height="16px"
+      width="20px"
+      height="20px"
       src="/icons/call.svg"
     />
   );

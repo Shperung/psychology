@@ -67,9 +67,17 @@
   }
 }
 
+.info_phone span {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
 .info_phone a {
   margin-right: 8px;
   font-size: 13px;
+  display: flex;
+  align-items: center;
 }
 
 .info_phone a,
