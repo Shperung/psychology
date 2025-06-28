@@ -79,7 +79,7 @@ export default function Header() {
           <span className={`${styles.info_item} ${styles.info_right} ${styles.info_phone}`}>
             <PhonesBlock />
           </span>
-          <div>
+          <div className={styles.address}>
             <span className={styles.info_item}>
               <img alt="локація" width="16px" height="16px" src="/icons/location.svg" />
               <a className={styles.info_item_link} href={MAP_URL}>
@@ -89,7 +89,11 @@ export default function Header() {
             <span className={styles.info_item}>
               <img alt="локація" width="16px" height="16px" src="/icons/location.svg" />
               <span className={styles.info_item_link}>
-                <T>Київ</T>, <T>метро Майдан Незалежності, вул. Михайлівська 20б</T>
+                <T>Київ</T>,{' '}
+                <T>
+                  метро Контрактова площа, вулиця Нижній Вал, 7-9. Триповерховий будинок біля
+                  заправки. Вхід з вулиці біля оптики. Третій поверх
+                </T>
               </span>
             </span>
           </div>
