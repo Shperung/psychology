@@ -120,7 +120,7 @@ export default function PricesBlock(props) {
               <T>Консультація сімейної пари</T>
             </h3>
             <div className={styles.flexWrap}>
-              <b className={styles.summ}>2500 грн</b>
+              <b className={styles.summ}>3500 грн</b>
             </div>
             <h4 className={styles.h4}>
               1 <T>прийом</T>
