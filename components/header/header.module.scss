@@ -1,7 +1,7 @@
 .nav {
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
-  background-color: var(--color-lime);
+  background-color: var(--color-soft);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -10,9 +10,14 @@
 [data-container].info {
   display: flex;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: 14px;
+  max-width: 100vw;
+}
+
+.address {
+  width: 36%;
 }
 
 .info_item {
@@ -38,7 +43,7 @@
 }
 
 .active {
-  color: var(--color-success);
+  color: var(--color-dawn);
 }
 
 .logo_hover {
@@ -67,13 +72,28 @@
   }
 }
 
+.info_phone span {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.info_phone a {
+  margin-right: 8px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.info_phone a,
 .info_item_link {
   text-decoration: none;
   font-weight: 600;
   color: var(--color-success);
+  border-bottom: 1px solid transparent;
 
   &:hover {
-    border-bottom: 1px solid;
+    border-color: var(--color-success);
   }
 }
 
@@ -118,7 +138,7 @@
       content: '';
       width: 0;
       height: 3px;
-      background-color: var(--color-success);
+      background-color: var(--color-dawn);
       position: absolute;
       left: 50%;
       bottom: 4px;
@@ -131,5 +151,15 @@
         width: 100%;
       }
     }
+  }
+}
+
+.social {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+
+  a {
+    margin-left: 16px;
   }
 }

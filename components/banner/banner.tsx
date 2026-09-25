@@ -11,12 +11,10 @@ import stylesBtns from '../button/button.module.scss';
 
 export default function Banner() {
   const options = { delay: 5000 }; // Options
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    /*Autoplay(options)*/
-  ]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay(options)]);
 
   return (
-    <>
+
       <section className={styles.embla} ref={emblaRef}>
         <div className={styles.embla__container}>
           <article className={`${styles.embla__slide} ${styles.slide_1}`}>
@@ -26,7 +24,7 @@ export default function Banner() {
                 <h2>
                   <T>Що приховується за Вашим зовнішнім спокоєм?</T>
                 </h2>
-                <a className={stylesBtns.btn}>
+                <a href="#anchor-form" className={stylesBtns.btn}>
                   <T>Зв'язатися</T>
                 </a>
               </div>
@@ -42,7 +40,7 @@ export default function Banner() {
                     особистої проблми.
                   </T>
                 </h2>
-                <a className={stylesBtns.btn}>
+                <a href="#anchor-form" className={stylesBtns.btn}>
                   <T>Зв'язатися</T>
                 </a>
               </div>
@@ -53,9 +51,22 @@ export default function Banner() {
             <div data-container className={styles.slide_container}>
               <div className={`${styles.slide_inner} ${styles.slide_inner_3}`}>
                 <h2>
-                  <T>Зупиніть стрес! Живіть гармонійним життям!</T>
+                  <T>Зупиніть стрес!</T>
                 </h2>
-                <a className={stylesBtns.btn}>
+                <a href="#anchor-form" className={stylesBtns.btn}>
+                  <T>Зв'язатися</T>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article className={`${styles.embla__slide} ${styles.slide_4}`}>
+            <img src="/slides/slide-4.jpeg" alt="слайд 3" />
+            <div data-container className={styles.slide_container}>
+              <div className={`${styles.slide_inner} ${styles.slide_inner_4}`}>
+                <h2>
+                  <T>Живіть гармонійним життям!</T>
+                </h2>
+                <a href="#anchor-form" className={stylesBtns.btn}>
                   <T>Зв'язатися</T>
                 </a>
               </div>
@@ -63,6 +74,6 @@ export default function Banner() {
           </article>
         </div>
       </section>
-    </>
+    
   );
 }

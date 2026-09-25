@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  padding-bottom: 64px;
+}
+
+.figcaption {
+  width: 100%;
+  padding-left: 16px;
+  padding-top: 32px;
+  padding-right: 64px;
+  text-align: center;
+
+  h1 {
+    font-size: 58px;
+    font-family: var(--font-header);
+    font-weight: 700;
+    margin-top: 57px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 26px;
+  }
+}
+
+.link {
+  margin-top: 32px;
+  margin-right: 32px;
+}
+
+.content {
+  padding-bottom: 64px;
+
+  p {
+    text-indent: 12px;
+  }
+
+  img {
+    float: right;
+    margin-left: 32px;
+  }
+}
+
+.license {
+  display: flex;
+  align-items: center;
+
+  figcaption {
+    padding-left: 32px;
+    font-size: 38px;
+  }
+}
+
+.info {
+  margin-top: -32px;
+  padding-bottom: 32px;
+
+  p {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-indent: 32px;
+  }
+}
+
+.sert {
+  margin-bottom: 64px;
+  text-align: center;
+}

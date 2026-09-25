@@ -1,12 +1,22 @@
 import Head from 'next/head';
 
+// components
+import T, { useTrans } from '../trans/trans';
+import ReviewsBlock from '../components/reviews/reviews';
+
+
 export default function Reviews() {
+  const { t } = useTrans();
+
   return (
-    <div>
+    <>
       <Head>
-        <title>Редько Тетяна Георгіївна | Відгуки</title>
+        <title>
+          {t('Відгуки')} | {t('Редько Тетяна Георгіївна')}
+        </title>
       </Head>
-      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Сторінка на стадії розробки</h3>
-    </div>
+      <ReviewsBlock />
+      
+    </>
   );
 }

@@ -3,6 +3,8 @@ import { useRouter } from 'next/router';
 
 // components
 import T, { useTrans } from '../../trans/trans';
+import PhonesBlock from '../contacts/phones';
+import SocialBlock from '../contacts/social';
 
 // styles
 import styles from './header.module.scss';
@@ -26,11 +28,6 @@ export default function Header() {
       path: '/pro-mene',
     },
     {
-      id: 3,
-      title: t('Послуги'),
-      path: '/poslugi',
-    },
-    {
       id: 4,
       title: t('Контакти'),
       path: '/kontakti',
@@ -45,6 +42,16 @@ export default function Header() {
       title: t('Відгуки'),
       path: '/vidguki',
     },
+    {
+      id: 3,
+      title: t('Цікаве'),
+      path: '/tsikave',
+    },
+    {
+      id: 7,
+      title: t('Новини'),
+      path: '/novini',
+    },
   ];
   return (
     <>
@@ -52,13 +59,11 @@ export default function Header() {
         <div data-container className={styles.info}>
           <div className={styles.info_item}>
             <img alt="час" width="16px" height="16px" src="/icons/time.svg" />
-            <time>
-              пн-суб 11<sup>00</sup> - 19<sup>00</sup>
-            </time>
+            <time>пн-суб</time>
           </div>
           <div className={`${styles.info_item} ${styles.info_lang}`}>
             <img alt="мова" width="16px" height="16px" src="/icons/world.svg" />
-            {locales.map(localeItem => {
+            {locales?.map(localeItem => {
               return (
                 <Link locale={localeItem} key={localeItem} href={asPath}>
                   <a
@@ -71,18 +76,27 @@ export default function Header() {
             })}
           </div>
 
-          <span className={`${styles.info_item} ${styles.info_right}`}>
-            <img alt="зателефонувати" width="16px" height="16px" src="/icons/call.svg" />
-            <a className={styles.info_item_link} href="tel:+380939167544">
-              +38-093-916-75-44
-            </a>
+          <span className={`${styles.info_item} ${styles.info_right} ${styles.info_phone}`}>
+            <PhonesBlock />
           </span>
-          <span className={styles.info_item}>
-            <img alt="локація" width="16px" height="16px" src="/icons/location.svg" />
-            <a className={styles.info_item_link} href={MAP_URL}>
-              <T>вул. Хмельницьке Шосе, 23, поверх 2, каб. 115</T>
-            </a>
-          </span>
+          <div className={styles.address}>
+            <span className={styles.info_item}>
+              <img alt="локація" width="16px" height="16px" src="/icons/location.svg" />
+              <a className={styles.info_item_link} href={MAP_URL}>
+                <T>Вінниця</T>, <T>Хмельницьке Шосе, 23, поверх 2, каб. 115</T>
+              </a>
+            </span>
+            <span className={styles.info_item}>
+              <img alt="локація" width="16px" height="16px" src="/icons/location.svg" />
+              <span className={styles.info_item_link}>
+                <T>Київ</T>,{' '}
+                <T>
+                  метро Контрактова площа, вулиця Нижній Вал, 7-9. Триповерховий будинок біля
+                  заправки. Вхід з вулиці біля оптики. Третій поверх
+                </T>
+              </span>
+            </span>
+          </div>
         </div>
       </header>
       <nav className={styles.nav}>
@@ -90,7 +104,7 @@ export default function Header() {
           <Link href="/">
             <a className={styles.logo}>
               <picture>
-                <source srcSet="/logo-main.png, /logo-main-2x.png 2x" />
+                <source srcSet="/logo-gray.png, /logo-gray-2x.png 2x" />
                 <img
                   alt={t('Редько Тетяна Георгіївна')}
                   title={t('Редько Тетяна Георгіївна')}
@@ -123,6 +137,9 @@ export default function Header() {
               );
             })}
           </menu>
+          <div className={styles.social}>
+            <SocialBlock />
+          </div>
         </div>
       </nav>
     </>

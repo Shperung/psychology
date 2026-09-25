@@ -6,7 +6,10 @@ let transporter = nodemailer.createTransport({
   auth: {
     user: process.env.EMAIL,
     pass: process.env.PASSWORD,
-  }
+  },
+  port: 468,
+  host: 'smtp.gmail.com',
+  secure: false,
 });
 
 const globalMailOptions = {
@@ -25,7 +28,7 @@ export default function mail(req, res) {
 
   console.log('process.env.EMAIL', process.env.EMAIL);
   console.log('process.env.PASSWORD', process.env.PASSWORD);
-  console.log('process.env', process.env);
+
 
   if (req.body.name && req.body.phone) {
     const mailOptions = {   

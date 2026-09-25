@@ -1,12 +1,23 @@
 import Head from 'next/head';
 
+// components
+import T, { useTrans } from '../trans/trans';
+import ContactsBlock from '../components/contacts/contacts';
+
 export default function Contacts() {
+  const { t } = useTrans();
+
   return (
     <div>
       <Head>
-        <title>Редько Тетяна Георгіївна | Котнакти</title>
+        <title>
+          {t('Контакти')} | {t('Редько Тетяна Георгіївна')}
+        </title>
       </Head>
-      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Сторінка на стадії розробки</h3>
+      <h1 data-heading>
+        <T>Контакти</T>
+      </h1>
+      <ContactsBlock />
     </div>
   );
 }
