@@ -21,13 +21,15 @@ export async function getServerSideProps(context) {
   const { unique } = context.params;
 
   // новина
-  const docRef = doc(db, 'news', unique);
-  const docSnap = await getDoc(docRef);
   let newsOne = null;
-  if (docSnap.exists()) {
-    newsOne = docSnap.data();
-  } else {
-    console.log('No such document!');
+  try {
+    const docSnap = await getDoc(doc(db, 'news', unique));
+    newsOne = docSnap.exists() ? docSnap.data() : null;
+  } catch (e) {
+    console.error('Firestore error:', e);
+  }
+  if (!newsOne) {
+    return { notFound: true };
   }
 
   return {
