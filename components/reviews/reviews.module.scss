@@ -5,6 +5,10 @@
   padding-bottom: 32px;
   padding-top: 120px;
 
+  @media (max-width: $tablat) {
+    padding-top: 48px;
+  }
+
   [data-heading] {
     margin-top: 0;
 
@@ -16,8 +20,26 @@
 
 .container {
   width: fit-content;
+  max-width: 100%;
   margin: auto;
   position: relative;
+
+  @media (max-width: $tablat) {
+    padding: 0 40px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    .prev_btn {
+      left: 4px;
+    }
+
+    .next_btn {
+      right: 4px;
+    }
+  }
 
   &::before {
     content: url('/okulus.jpeg');
@@ -100,6 +122,10 @@
   p {
     font-style: italic;
     font-size: 16px;
+
+    @media (max-width: $phone) {
+      font-size: 15px;
+    }
   }
 
   b {

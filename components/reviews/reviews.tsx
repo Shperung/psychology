@@ -46,7 +46,7 @@ export default function ReviewsBlock() {
      <h1 data-heading>
           <T>Відео відгук</T>         
        </h1>
-       <div style={{paddingBottom: '64px', marginTop: '-16px', display: 'flex', justifyContent: 'center'}}>         
+       <div style={{paddingBottom: '64px', marginTop: '-16px', display: 'flex', justifyContent: 'center', padding: '0 16px'}}>         
        <video width="750" height="500" controls >
         <source src="/video/review1.mp4" type="video/mp4"/>
        </video>

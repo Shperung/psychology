@@ -1,6 +1,13 @@
+@import './var.scss';
+
 .post_figure {
-   padding-bottom: 64px;
-   padding-top: 32px; 
+  padding-bottom: 64px;
+  padding-top: 32px;
+
+  @media (max-width: $phone) {
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
 }
 
 .post_img {
@@ -8,15 +15,32 @@
   max-width: 600px;
   margin-right: 32px;
   margin-bottom: 32px;
+
+  @media (max-width: $tablet-min) {
+    float: none;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 24px;
+  }
 }
 
 .post_content {
   font-size: 18px;
   line-height: 1.45;
+  overflow-wrap: break-word;
+
+  @media (max-width: $phone) {
+    font-size: 16px;
+  }
 
   p {
     margin-bottom: 16px;
     text-indent: 14px;
+  }
+
+  img,
+  iframe {
+    max-width: 100%;
   }
 }
 

@@ -7,17 +7,40 @@
   padding-top: 16px;
   margin-left: -16px;
   margin-right: -16px;
+
+  @media (max-width: $phone) {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
 }
 
 .article {
   width: calc(100% / 3);
   padding: 0 16px;
   margin-bottom: 32px;
+
+  @media (max-width: $tablat) {
+    width: 50%;
+  }
+
+  @media (max-width: $phone-big) {
+    width: 100%;
+  }
+
+  @media (max-width: $phone) {
+    padding: 0 8px;
+    margin-bottom: 16px;
+  }
 }
 
 .figure {
   height: 230px;
   overflow: hidden;
+
+  @media (max-width: $phone) {
+    height: 200px;
+  }
+
   position: relative;
   box-shadow: var(--box-shadow);
   transition: box-shadow 0.3s ease-in-out;
@@ -52,12 +75,24 @@
     font-family: var(--font-header);
     font-weight: 700;
     font-size: 24px;
+
+    @media (max-width: $tablat) {
+      font-size: 20px;
+    }
   }
 }
 
 .prof_blocks {
   display: flex;
   padding-left: 16px;
+
+  @media (max-width: $tablet-min) {
+    padding: 0 16px;
+  }
+
+  @media (max-width: $phone) {
+    padding: 0 8px;
+  }
 }
 
 .prof_figure {
@@ -94,6 +129,10 @@
 
   &.double {
     grid-template-columns: 1fr 1fr;
+
+    @media (max-width: $phone-big) {
+      grid-template-columns: 1fr;
+    }
   }
 
   @media (max-width: $tablat) {
@@ -102,8 +141,8 @@
   }
 
   @media (max-width: $tablet-min) {
-    padding: 32px;
-    padding-left: 64px;
+    padding: 16px 0 0 32px;
+    top: 0;
   }
 
   @media (max-width: $phone-big) {
@@ -153,12 +192,32 @@
     font-family: var(--font-header);
     font-weight: 700;
     margin-top: 57px;
+
+    @media (max-width: $tablat) {
+      font-size: 36px;
+      margin-top: 32px;
+    }
+
+    @media (max-width: $phone) {
+      font-size: 26px;
+      margin-top: 0;
+    }
   }
 
   h2 {
     font-size: 24px;
     margin-top: -32px;
     padding-bottom: 16px;
+
+    @media (max-width: $tablat) {
+      font-size: 20px;
+      margin-top: -16px;
+    }
+
+    @media (max-width: $phone) {
+      font-size: 17px;
+      margin-top: 0;
+    }
   }
 }
 
@@ -167,10 +226,23 @@
   padding-top: 32px;
   padding-left: 64px;
 
+  @media (max-width: $tablet-min) {
+    padding-left: 16px;
+  }
+
   li {
     font-weight: 600;
     font-size: 24px;
     margin-bottom: 16px;
+
+    @media (max-width: $tablat) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $phone) {
+      font-size: 16px;
+    }
+
     display: flex;
     align-items: center;
 

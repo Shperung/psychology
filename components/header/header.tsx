@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -15,6 +16,11 @@ const MAP_URL =
 export default function Header() {
   const { pathname, locales, asPath, locale } = useRouter();
   const { t } = useTrans();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [asPath]);
 
   const NAVIGAIONS = [
     {
@@ -57,7 +63,7 @@ export default function Header() {
     <>
       <header>
         <div data-container className={styles.info}>
-          <div className={styles.info_item}>
+          <div className={`${styles.info_item} ${styles.info_time}`}>
             <img alt="час" width="16px" height="16px" src="/icons/time.svg" />
             <time>пн-суб</time>
           </div>
@@ -126,7 +132,7 @@ export default function Header() {
               </picture>
             </a>
           </Link>
-          <menu className={styles.menu}>
+          <menu className={`${styles.menu} ${menuOpen ? styles.menu_open : ''}`}>
             {NAVIGAIONS.map(navItem => {
               return (
                 <Link key={navItem.id} href={navItem.path}>
@@ -140,6 +146,14 @@ export default function Header() {
           <div className={styles.social}>
             <SocialBlock />
           </div>
+          <button
+            className={`${styles.burger} ${menuOpen ? styles.burger_open : ''}`}
+            aria-label="menu"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span />
+          </button>
         </div>
       </nav>
     </>
